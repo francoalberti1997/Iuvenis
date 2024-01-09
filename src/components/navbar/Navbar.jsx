@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav>
         <div className="first-line">
             <div className="container-nav logo">
-                <img src={logo} alt="" />
+                <div className="logo-imagen"><img src={logo} alt="" /></div>
                 <p>1ra compañía en Argentina</p>
             </div>
             <div className="container-nav info">
