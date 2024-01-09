@@ -18,7 +18,9 @@
   padding: 0;
 }
 
-
+#mobile{
+  display: none;
+}
 
 nav{
   height: 200px;
@@ -195,26 +197,69 @@ nav{
 
 
 @media screen and (max-width: 700px){
-  .second-line{
-    display: none;
-  }
   .first-line{
     display: flex;
     flex-direction: column;
     height: 200px;
     width: 100%;
   }
-  .info, .logo{
+  .info, .logo{ 
     width: 100%;
     max-width: none;
   }
   .info{
     background-color: var(--verde_claro);
+    height: 100px;
   }
   .logo-imagen{
     aspect-ratio: 1890 / 355;
     overflow: hidden;
     height: 100px;
     width: auto; /*Joya!*/
+  }
+
+  #mobile{
+    display: block;
+    padding: 10px;
+    opacity: 1;
+    border-radius: 5px;
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 32px;
+    text-align: center;
+  }
+  .second-line{
+    display: none;
+  }
+
+  .phone-active{
+    width: 70%;
+  }
+  .select_lg{
+    max-width: 15%;
+    box-sizing: border-box;
+    height: 70px;
+  }
+
+  .info-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 435px){
+  .phone-active{display: none;}
+  .info-contacto{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav{
+    overflow: hidden;
+  }
+  .container-nav, .logo, .logo-imagen{
+    overflow: hidden;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
