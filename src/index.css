@@ -1,10 +1,149 @@
+:root {
+  --gris: #3b3a3c;
+  --marron: #887379;
+  --gris: #7c797c;
+  --marron_oscuro: #473e3f;
+  --gris_oscuro:#2e2f28;
+  --gris_claro: #5d5d55;
+  --verde: #75db5c;
+  --negro: #060a07;
+  --verde_claro: #ddead2;
+  --blanco: #fff;
+}
+
+
+
 *{
   margin: 0;
   padding: 0;
 }
 
-p{
-  background-color: blanchedalmond;
-  height: 100%;
-  font-size: 50px;
+
+
+nav{
+  height: 200px;
+  width: 100%;
+  background-color: var(--gris);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.first-line{
+  height: 100px;
+  width: 100%;
+  background-color: var(--blanco);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.container-nav{
+  box-sizing: border-box;
+  max-width: 360px;
+  height: 70px;
+  display: flex;
+  font-family: 'Oxygen', sans-serif;
+
+}
+
+.container-nav img{
+  height: 70px;
+  width: 100%;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100px !important;
+}
+
+.logo p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.info{
+  justify-content: center;
+}
+
+.phone{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  box-sizing: border-box;
+}
+
+.phone div{
+  margin: 5px;
+}
+
+.info-contacto{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.info-contacto div{
+  margin: 5px;
+}
+
+.info-phone{
+  height: 70px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-phone{
+  height: 50px;
+  width: 25px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+
+}
+.mail-info{
+  font-weight: 700;
+}
+.number-info{
+  color: var(--gris_claro);
+}
+
+.icon-phone i{
+  font-size: 32px;
+  color: var(--verde);
+}
+
+
+.select_lg{
+  display: flex;
+  flex: 1;
+  height: 70px;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+}
+.text-languaje, .icon-language{
+  font-size: 20px;
+}
+
+.text-languaje{
+  font-size: 20px;
+  margin: 3px;
+}
+
+.icon-language{
+  color: var(--verde);
+}
+
+.text-languaje{
+  color: var(--gris);
 }
