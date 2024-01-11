@@ -280,7 +280,7 @@ nav{
     align-items: center;
     top: 200px; /* Ajusta la posición según tus necesidades */
     transform: translateX(-100%);
-    transition: transform 0.1s ease;
+    transition: transform 0.5s ease;
     box-sizing: border-box;
     background-color: var(--verde_claro);
     box-shadow: 0 5px 7.5px var(--verde_claro);
