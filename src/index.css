@@ -290,7 +290,7 @@ nav{
     max-width: 100%;
     min-width: 100%;
     z-index: 1;
-    overflow-y: scroll;
+    overflow: hidden;
   }
   
   #second-line-burguer.active {
@@ -423,11 +423,28 @@ nav{
 }
 
 @media screen and (max-height:680px){
+
+  #second-line-burguer{
+    top: 100px;
+    z-index: -1;
+  }
+
   .nav-section-burguer{
     display: flex;
     justify-content: start !important;
     height: 100%;
+    overflow: hidden;
     box-sizing: border-box;
+    top: 100px;
+    position: absolute;
+  }
+
+  #second-line-burguer{
+    overflow: hidden;
+  }
+
+  .nav-section a{
+    font-size: 18px;
   }
 
   #img-banner{
@@ -443,4 +460,32 @@ nav{
   }
 }
 
+@media screen and (max-height:536px){
+  .nav-section{
+    height: auto;
+  }
+  .nav-section-burguer{
+    justify-content: center !important;
+    top: 0;
+  }
+
+  .nav-section{
+    max-height: 15% !important;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+@media screen and (max-height:406px){
+  .nav-section{
+    max-height: 15% !important;
+    box-sizing: border-box;
+    padding-top: 5px;
+  }
+  .nav-section a{
+    font-size: 15px;
+  }
+}
 
