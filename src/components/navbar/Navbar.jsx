@@ -6,10 +6,9 @@ const Navbar = () => {
     const [clicked, setClicked] = useState(false);
 
     const toggleMenu = () => {
-    setClicked(!clicked);
+        setClicked(!clicked);
+        document.documentElement.classList.toggle('menu-active', clicked);
     };
-
-
   return (
     <nav>
         <div className="first-line">
