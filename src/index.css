@@ -358,11 +358,13 @@ nav{
 
   #img-banner{
     background: linear-gradient(to right, var(--verde_claro) 0%, var(--blanco) 29%,var(--blanco) 40%, var(--blanco) 65%,var(--verde_claro) 100%);
-    height: 30%;
+    max-height: 30%;
+    min-height: 190px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: red;
     box-sizing: border-box;
   }
   #img-banner{
@@ -403,3 +405,42 @@ nav{
     overflow: hidden;
   }
 }
+
+@media screen and (max-height:835px){
+  .nav-section-burguer{
+    display: flex;
+    justify-content: start !important;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  .nav-section{
+    max-height: 15% !important;
+    box-sizing: border-box;
+  }
+  .nav-section p{
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-height:680px){
+  .nav-section-burguer{
+    display: flex;
+    justify-content: start !important;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  #img-banner{
+    display: none;
+  }
+
+  .nav-section{
+    max-height: 15% !important;
+    box-sizing: border-box;
+  }
+  .nav-section p{
+    font-size: 18px;
+  }
+}
+
+

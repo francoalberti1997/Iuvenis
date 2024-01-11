@@ -40,6 +40,7 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
+
         <div id="second-line">
             <div className="nav-section"><p><a href="">Inicio</a></p></div>
             <div className="nav-section"><p><a href="">Investigación</a></p></div>
@@ -47,6 +48,7 @@ const Navbar = () => {
             <div className="nav-section"><p><a href="">Mision</a></p></div>
             <div className="nav-section"><p><a href="">Contacto</a></p></div>
         </div>
+        
         <div id="second-line-burguer" className={clicked ? 'active' : ''}>
             <div id="img-banner" className={clicked ? 'active' : ''}>
                 <div className="logo-imagen-section"><img src="https://media.istockphoto.com/id/491634826/vector/plus-or-medical-cross-symbol.jpg?s=612x612&w=0&k=20&c=djJsX6rvQHd-UAWoFaH0PF-20QfyzwDt0939jeBOFpk=" alt="" /></div>
