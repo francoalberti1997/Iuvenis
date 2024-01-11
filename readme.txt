@@ -2,3 +2,6 @@ https://www.lanevol.org/who TIENE QUE ESTAR
 
 ponerle el cubo de icono mejor 
 
+Poner ser parte del equipo
+
+responsive en height

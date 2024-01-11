@@ -216,7 +216,7 @@ nav{
   }
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
   
 
@@ -290,6 +290,7 @@ nav{
     max-width: 100%;
     min-width: 100%;
     z-index: 1;
+    overflow-y: scroll;
   }
   
   #second-line-burguer.active {
@@ -353,7 +354,6 @@ nav{
     padding-bottom: 25px;
     height: auto;
     width: 100%;
-    background-color: var(--verde_claro);
   }
 
   #img-banner{
