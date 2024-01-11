@@ -22,6 +22,11 @@
   display: none;
 }
 
+#second-line-burguer{
+  display: none;
+}
+
+
 nav{
   height: 200px;
   width: 100%;
@@ -31,6 +36,9 @@ nav{
   box-sizing: border-box;
   justify-content: space-between;
   align-items: start;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
 }
 
 .first-line{
@@ -49,6 +57,10 @@ nav{
   display: flex;
   font-family: 'Oxygen', sans-serif;
 
+}
+
+.info-phone a{
+  text-decoration: none;
 }
 
 .logo-imagen{
@@ -106,7 +118,7 @@ nav{
 
 .info-phone{
   height: 70px;
-  font-size: 16px;
+  font-size: 15px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -160,9 +172,9 @@ nav{
 }
 
 /*second-line*/
-.second-line{
+#second-line{
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   box-sizing: border-box;
   background-color: var(--verde_claro);
   justify-content: space-evenly;
@@ -196,7 +208,32 @@ nav{
 }
 
 
+
 @media screen and (max-width: 700px){
+  html{
+    overflow: hidden;
+  }
+
+  .phone-active{
+    width: 50% !important;
+  }
+
+  .info-contacto{
+    justify-content: space-evenly !important;
+  }
+
+  .info-phone{
+    flex:1;
+  }
+
+  #second-line{
+    display: none;
+  }
+
+  #second-line-burguer{
+    display: flex;
+  }
+
   .first-line{
     display: flex;
     flex-direction: column;
@@ -211,6 +248,7 @@ nav{
     background-color: var(--verde_claro);
     height: 100px;
   }
+
   .logo-imagen{
     aspect-ratio: 1890 / 355;
     overflow: hidden;
@@ -223,13 +261,33 @@ nav{
     padding: 10px;
     opacity: 1;
     border-radius: 5px;
-    max-width: 40px;
+    min-width: 40px;
     max-height: 40px;
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
   }
-  .second-line{
-    display: none;
+
+  #second-line-burguer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    transform: translateX(150%);
+    transition: transform 1s ease;
+    box-sizing: border-box;
+    background-color: var(--verde_claro);
+    box-shadow: 0 5px 7.5px var(--verde_claro);
+    padding: 40px 0 120px 10px;
+    height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+    z-index: 1;
+  }
+
+  #second-line-burguer.active{
+    transform: translateX(0);
   }
 
   .phone-active{
@@ -246,20 +304,91 @@ nav{
     justify-content: center;
     align-items: center;
   }
+  #second-line{
+    display: none;
+  }
+  .nav-section{
+    color: var(--verde_claro);
+  }
+  .nav-section p{
+    color: var(--verde_claro);
+  }
+  .nav-section a{
+    color: var(--negro);
+    text-decoration: none;
+  }
+
+  .logo-imagen-section{
+    background-size: contain;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    height: 100%;
+    box-sizing: border-box;
+    width:auto;
+  }
+
+  .logo-imagen-section img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-section-burguer{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+    height: auto;
+    width: 100%;
+    background-color: var(--verde_claro);
+  }
+
+  #img-banner{
+    background: linear-gradient(to right, var(--verde_claro) 0%, var(--blanco) 29%,var(--blanco) 40%, var(--blanco) 65%,var(--verde_claro) 100%);
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  #img-banner{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+
+  #img-banner p{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    color: var(--marron_oscuro);
+  }
+
+  #img-banner img{
+    opacity: 0.1;
+    transition: opacity linear 3s; /* Corrección: "transform" debe ser "transition" */
+  }
+  
+  #img-banner.active img{
+    opacity: 1;
+  }
+  
 }
 
 @media screen and (max-width: 435px){
-  .phone-active{display: none;}
+  .phone-active{
+    display: none;
+  }
   .info-contacto{
     display: flex;
     justify-content: space-evenly;
   }
   .nav{
     overflow: hidden;
-  }
-  .container-nav, .logo, .logo-imagen{
-    overflow: hidden;
-    max-width: 100%;
-    box-sizing: border-box;
   }
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="first-line">
             <div className="container-nav logo">
                 <div className="logo-imagen"><img src={logo} alt="" /></div>
-                <p>1ra compañía en Argentina</p>
+                <p>Leading research</p>
             </div>
             <div className="container-nav info">
                 <div className="info-contacto">
@@ -29,8 +29,8 @@ const Navbar = () => {
                             <i class="fa fa-solid fa-phone"></i>
                         </div>
                         <div className="info-phone">
-                            <p className='mail-info'>AlbertiFranco1997.Gmail.com</p>
-                            <p className='number-info'>+541176385223</p>
+                            <p className='mail-info'>inquiries.1mpossible@gmail.com</p>
+                            <a class="number-info whats-app" href="https://wa.me/+5491169732194?text=¡Hola! Me gustaría obtener más información." target="" id="wsp"><p className='number-info'>+5491169732194</p></a>
                         </div>
                     </div>
 
@@ -41,14 +41,27 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-        <div className="second-line second-line-active">
+        <div id="second-line">
             <div className="nav-section"><p><a href="">Inicio</a></p></div>
             <div className="nav-section"><p><a href="">Investigación</a></p></div>
             <div className="nav-section"><p><a href="">Colaboradores</a></p></div>
             <div className="nav-section"><p><a href="">Mision</a></p></div>
             <div className="nav-section"><p><a href="">Contacto</a></p></div>
         </div>
-
+        <div id="second-line-burguer" className={clicked ? 'active' : ''}>
+            <div id="img-banner" className={clicked ? 'active' : ''}>
+                <div className="logo-imagen-section"><img src="https://media.istockphoto.com/id/491634826/vector/plus-or-medical-cross-symbol.jpg?s=612x612&w=0&k=20&c=djJsX6rvQHd-UAWoFaH0PF-20QfyzwDt0939jeBOFpk=" alt="" /></div>
+                <p>Expansión de horizontes y vitalidad</p>
+            </div>
+                
+            <div className='nav-section-burguer'>
+                <div className="nav-section"><p><a href="">Inicio</a></p></div>
+                <div className="nav-section"><p><a href="">Investigación</a></p></div>
+                <div className="nav-section"><p><a href="">Colaboradores</a></p></div>
+                <div className="nav-section"><p><a href="">Mision</a></p></div>
+                <div className="nav-section"><p><a href="">Contacto</a></p></div>
+            </div>
+        </div>
         
     </nav>
   )
