@@ -1,6 +1,8 @@
 import React from "react"
 import Navbar from "./components/navbar/Navbar"
 import Inicio from "./components/inicio/Inicio"
+import Servicios from "./components/Servicios/Servicios"
+
 
 function App() {
 
@@ -8,6 +10,7 @@ function App() {
     <>
       <Navbar/>
       <Inicio/>
+      <Servicios/>
     </>
   )
 }

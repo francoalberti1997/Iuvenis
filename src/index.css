@@ -223,16 +223,15 @@ nav{
 
 .inicio{
   width: 100%;
-  background-color: black;
+  background-color: red;
   display: flex;
-  margin: 0;  
+  margin: 0;
+
 }
 .inicio-wrapper-image{
   width: 70%;
   background-color: var(--verde);
   margin: 0;  /* Asegura que no haya márgenes en el contenedor de la imagen */
-  
-
 }
 
 .inicio-wrapper-image img{
@@ -303,6 +302,110 @@ nav{
   font-family: 'Raleway', sans-serif;
   /* font-family: 'Oxygen', sans-serif; */
 
+}
+
+/*CRIOGENIA*/
+
+.servicios{
+  background-color: var(--verde);
+  display: flex;
+}
+
+.criogenia{
+  background-color: var(--blanco);
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.main-image,
+.main-text{
+  box-sizing: border-box;
+  width: 50%;
+}
+
+.main-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  box-sizing: border-box;
+  margin-right: 20px;
+  overflow: hidden;
+}
+
+.main-image img{
+  height: auto;
+  aspect-ratio: 483 / 322 !important;
+  background-size: cover;
+  height: 80%;
+  width: auto;
+  opacity: 1;
+}
+
+.main-text{
+  /* background-color: var(--marron); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-text-p{
+  height: 80%;
+  width: 95%;
+  background-color: var(--blanco);
+  border-radius: 25px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  margin-top: 25px;
+}
+
+.main-text-p h2{
+  color: var(--verde);
+  font-size: 50px;
+  height: auto;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-text-p p{
+  color: var(--negro);
+  font-size: 23px;
+  height: auto;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  line-height: 50px;
+  text-align: start;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.main-text-button{
+  width: 200px;
+  height: 40px;
+  background-color: var(--verde);
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: var(--blanco);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.main-text-button:hover{
+  opacity: 0.8;
 }
 
 
@@ -639,6 +742,7 @@ nav{
 
   #img-banner p{
     font-family: 'Raleway', sans-serif;
+
     font-weight: 700;
     color: var(--marron_oscuro);
   }
@@ -659,6 +763,8 @@ nav{
   .inicio-text-title h2 {
     font-size: 14px;
 }
+
+
 
 .mobile-text h2{
   font-size: 55px !important;
@@ -697,6 +803,19 @@ nav{
   }
 }
 
+
+
+@media screen and (max-height:859px){
+
+  .main-text-p p{
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 800;
+
+  }
+}
+
+
 @media screen and (max-height:835px){
   .nav-section-burguer{
     display: flex;
@@ -708,12 +827,13 @@ nav{
     max-height: 15% !important;
     box-sizing: border-box;
   }
-  .nav-section p{
-    font-size: 18px;
-  }
 
   .mobile-text{
     top: 270px;
+  }
+
+  .main-text-p p{
+    font-size: 18px;
   }
 }
 
@@ -724,6 +844,11 @@ nav{
   #second-line-burguer{
     /* top: 100px; */
     z-index: 1;
+  }
+
+  .main-text-p p{
+    font-size: 16px;
+    line-height: 32px;
   }
 
   .nav-section-burguer{
@@ -773,10 +898,28 @@ nav{
     box-sizing: border-box;
   }
 
+  .main-text-p h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .main-text-p p{
+    line-height: 28px;
+  }
+  .main-text-button{
+    margin-top: 20px; 
+}}
+
+@media screen and (max-height:479px){
+
+.main-text-p h2{
+  font-size: 30px;
+  margin-bottom: 10px;
 }
 
-
-
+.main-text-p p{
+  line-height: 28px;
+}
+}
 
 @media screen and (max-height:416px){
   .nav-section{

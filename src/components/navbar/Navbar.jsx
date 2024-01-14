@@ -44,8 +44,8 @@ const Navbar = () => {
 
         <div id="second-line">
             <div className="nav-section"><p><a href="">Inicio</a></p></div>
-            <div className="nav-section"><p><a href="">Investigación</a></p></div>
-            <div className="nav-section"><p><a href="">Colaboradores</a></p></div>
+            <div className="nav-section"><p><a href="#Servicios">Servicios</a></p></div>
+            <div className="nav-section"><p><a href="">Nosotros</a></p></div>
             <div className="nav-section"><p><a href="">Mision</a></p></div>
             <div className="nav-section"><p><a href="">Contacto</a></p></div>
         </div>
