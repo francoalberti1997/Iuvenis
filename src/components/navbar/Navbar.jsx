@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../navbar/1mPossible.png"
+import logo_new from "../inicio/logo_nuevo.jpg"
 
 const Navbar = () => {
 
@@ -51,16 +52,15 @@ const Navbar = () => {
         
         <div id="second-line-burguer" className={clicked ? 'active' : ''}>
             <div id="img-banner" className={clicked ? 'active' : ''}>
-                <div className="logo-imagen-section"><img src="https://media.istockphoto.com/id/491634826/vector/plus-or-medical-cross-symbol.jpg?s=612x612&w=0&k=20&c=djJsX6rvQHd-UAWoFaH0PF-20QfyzwDt0939jeBOFpk=" alt="" /></div>
-                <p>Expansión de horizontes y vitalidad</p>
+                <div className="logo-imagen-section"><img src={logo_new} alt="" /></div>
             </div>
                 
             <div className='nav-section-burguer'>
-                <div className="nav-section"><p><a href="">Inicio</a></p></div>
-                <div className="nav-section"><p><a href="">Investigación</a></p></div>
-                <div className="nav-section"><p><a href="">Colaboradores</a></p></div>
-                <div className="nav-section"><p><a href="">Mision</a></p></div>
-                <div className="nav-section"><p><a href="">Contacto</a></p></div>
+                <div className="nav-section"><p><a href="/">Inicio <i class="fa fa-home" aria-hidden="true"></i></a></p></div>
+                <div className="nav-section"><p><a href="">Investigación <i class="fa fa-flask" aria-hidden="true"></i></a></p></div>
+                <div className="nav-section"><p><a href="">Colaboradores <i class="fa fa-search" aria-hidden="true"></i></a></p></div>
+                <div className="nav-section"><p><a href="">Mision <i class="fa fa-check" aria-hidden="true"></i></a></p></div>
+                <div className="nav-section"><p><a href="">Contacto <i class="fa fa-user-o" aria-hidden="true"></i></a></p></div>
             </div>
         </div>
         

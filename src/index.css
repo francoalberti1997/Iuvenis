@@ -26,6 +26,9 @@
   display: none;
 }
 
+.mobile-text{
+  display: none;
+}
 
 nav{
   height: 200px;
@@ -185,17 +188,18 @@ nav{
 }
 
 .nav-section{
-  max-width: 150px;
+  min-width: 150px;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
   padding: 5px;
+  width: 100%;
+
 }
 
 .nav-section p{
-  font-size: 22px;
   color: var(--marron);
   font-weight: 800;
   font-family: 'Raleway', sans-serif;
@@ -209,6 +213,10 @@ nav{
   font-family: 'Raleway', sans-serif;
 }
 
+.nav-section a i{
+  color: var(--blanco);
+  font-weight: 800;
+}
 
 /*INICIO*/
 
@@ -235,7 +243,7 @@ nav{
   opacity: 0.8;
   width: 100%;
   background-position: center;
-  display: block;  /* Elimina espacios adicionales en la parte inferior del elemento img */
+  display: block;  /* Elimina espacios adicionales en la   parte inferior del elemento img */
   background-repeat: no-repeat;
 }
 
@@ -249,11 +257,12 @@ nav{
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  
 }
 
 .inicio-text-image{
   margin-top: 20px;
-  width: 50%;
+  width: 70%;
   box-sizing: border-box;
   display: flex;
   background-color: none;
@@ -268,6 +277,8 @@ nav{
   aspect-ratio:  807 / 504;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 20px;
+
 
   /* opacity: 0.75; */
 }
@@ -294,9 +305,19 @@ nav{
 
 }
 
+
+@media screen and (max-width: 1527px){
+  .inicio-text-title h2{
+    font-size: 31px;
+  }
+  .inicio-text-title{
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 1356px){
   .inicio-text-title h2{
-    font-size: 32px;
+    font-size: 29px;
   }
   .inicio-text-title{
     width: 100%;
@@ -318,9 +339,9 @@ nav{
   }
   
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1030px){
   .inicio-text-title h2{
-    font-size: 25px;
+    font-size: 24px;
   }
   .inicio-text-title{
     width: 100%;
@@ -333,7 +354,7 @@ nav{
   
 }
 
-@media screen and (max-width: 890px){
+@media screen and (max-width: 970px){
   .inicio-text-title h2{
     font-size: 21px;
   }
@@ -348,13 +369,28 @@ nav{
   
 }
 
-@media screen and (max-width: 780px){
+@media screen and (max-width: 800px){
   .inicio-text-title h2{
-    font-size: 20px;
+    font-size: 19px;
   }
   .inicio-text-title{
     width: 100%;
-    line-height: 27px;
+    line-height: 23px;
+  }
+
+  .inicio-text-title{
+    border-bottom: var(--verde) 7px solid;
+  }
+}
+
+
+@media screen and (max-width: 701px){
+  .inicio-text-title h2{
+    font-size: 18px;
+  }
+  .inicio-text-title{
+    width: 100%;
+    line-height: 22px;
   }
 
   .inicio-text-title{
@@ -367,15 +403,68 @@ nav{
 
 @media screen and (max-width: 700px){
   html{
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   body {
     overflow-x: hidden;
   }
   
+  /* INICIO */
 
+  .inicio-wrapper-image{
+    width: 100%;
+    background-color:rgb(0, 0, 0) 
+  }
 
+  .inicio-wrapper-image img{
+    height: 80vh;
+    width: auto;
+  }
+
+  .inicio-text{
+    display: none;
+  }
+
+  .inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--marron_oscuro);
+  }
+
+  .mobile-text{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 70%;
+    left: 20%;
+    top: 200px;
+    background-color: none;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: ; */
+    aspect-ratio: 1890 / 355;
+
+  }
+  
+  .mobile-text h2{
+    font-size: 62px !important;
+    line-height: 80px;
+    font-family: 'Oxygen', sans-serif;
+  }
+
+  .mobile-text img{
+    width: 40%;
+    opacity: 0.5;
+  }
+
+ 
+  .inicio-wrapper-image{
+    opacity: 0.35;
+  }
+
+  
   .phone-active{
     width: 50% !important;
   }
@@ -407,7 +496,7 @@ nav{
     max-width: none;
   }
   .info{
-    background-color: var(--verde_claro);
+    background-color: var(--verde);
     height: 100px;
   }
 
@@ -427,20 +516,21 @@ nav{
     max-height: 40px;
     font-size: 28px;
     text-align: center;
+    color: var(--negro);
   }
   #second-line-burguer {
     position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     top: 200px; /* Ajusta la posición según tus necesidades */
     transform: translateX(-100%);
     transition: transform 0.5s ease;
     box-sizing: border-box;
-    background-color: var(--verde_claro);
+    background-color: var(--verde);
     box-shadow: 0 5px 7.5px var(--verde_claro);
-    padding: 40px 0 120px 10px;
+    /* padding: 20px 0 0 0; */
     height: 100vh;
     max-width: 100%;
     min-width: 100%;
@@ -481,10 +571,26 @@ nav{
     color: var(--verde_claro);
   }
   .nav-section a{
-    color: var(--negro);
+    color: var(--blanco);
     text-decoration: none;
+    /* font-size: 25px; */
   }
 
+  .icon-phone i{
+    color: var(--gris_oscuro);
+  }
+  .number-info {
+    color: var(--gris_oscuro);
+    font-weight: 600;
+}
+
+.text-languaje{
+  color: var(--gris_oscuro);
+}
+
+.mail-info{
+  color: var(--gris_oscuro);
+}
   .logo-imagen-section{
     background-size: contain;
     aspect-ratio: 1 / 1;
@@ -503,7 +609,7 @@ nav{
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
     padding-bottom: 25px;
@@ -512,7 +618,7 @@ nav{
   }
 
   #img-banner{
-    background: linear-gradient(to right, var(--verde_claro) 0%, var(--blanco) 29%,var(--blanco) 40%, var(--blanco) 65%,var(--verde_claro) 100%);
+    background: linear-gradient(to right, var(--verde) 0%, var(--blanco) 29%,var(--blanco) 40%, var(--blanco) 65%,var(--verde) 100%);
     max-height: 30%;
     min-height: 190px;
     width: 100%;
@@ -548,7 +654,37 @@ nav{
   
 }
 
+
+@media screen and (max-width: 670px){
+  .inicio-text-title h2 {
+    font-size: 14px;
+}
+
+.mobile-text h2{
+  font-size: 55px !important;
+  line-height: 70px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+}
+
+@media screen and (max-width: 540px){
+
+.mobile-text h2{
+  font-size: 45px !important;
+  line-height: 66px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+}
+
+
 @media screen and (max-width: 435px){
+  .mobile-text h2{
+    font-size: 35px !important;
+    line-height: 66px;
+  }
+
   .phone-active{
     display: none;
   }
@@ -564,7 +700,7 @@ nav{
 @media screen and (max-height:835px){
   .nav-section-burguer{
     display: flex;
-    justify-content: start !important;
+    justify-content: space-around;
     height: 100%;
     box-sizing: border-box;
   }
@@ -577,21 +713,24 @@ nav{
   }
 }
 
+
+
 @media screen and (max-height:680px){
 
   #second-line-burguer{
-    top: 100px;
-    z-index: -1;
+    /* top: 100px; */
+    z-index: 1;
   }
 
   .nav-section-burguer{
     display: flex;
-    justify-content: start !important;
-    height: 100%;
+    justify-content: center;
+    height: 90%;
     overflow: hidden;
     box-sizing: border-box;
-    top: 100px;
     position: absolute;
+    padding: 0;
+    margin: 0;
   }
 
   #second-line-burguer{
@@ -599,7 +738,7 @@ nav{
   }
 
   .nav-section a{
-    font-size: 18px;
+    font-size: 30px;
   }
 
   #img-banner{
@@ -609,10 +748,11 @@ nav{
   .nav-section{
     max-height: 15% !important;
     box-sizing: border-box;
+    margin: 15px;
   }
-  .nav-section p{
+  /* .nav-section p{
     font-size: 18px;
-  }
+  } */
 }
 
 @media screen and (max-height:536px){
@@ -627,12 +767,8 @@ nav{
   .nav-section{
     max-height: 15% !important;
     box-sizing: border-box;
-    margin: 5px;
   }
 
-  .nav-section a{
-    font-size: 20px;
-  }
 }
 
 
@@ -643,14 +779,15 @@ nav{
     max-height: 15% !important;
     box-sizing: border-box;
     padding-top: 5px;
+    margin-bottom: 10px !important;
+
   }
   .nav-section a{
-    font-size: 16px;
+    margin: 5px;
   }
   .nav-section-burguer{
-    justify-content: center !important;
+    justify-content: end !important;
     top: 10px;
-
   }
 }
 
