@@ -839,11 +839,12 @@ nav{
   flex-direction: column;
   width: 100%;
   align-items: center;
+  height: auto;
 }
 
 
 .mobile-text h2{
-  font-size: 55px !important;
+  font-size: 59px !important;
   line-height: 75px;
   font-family: 'Oxygen', sans-serif;
 }
@@ -853,6 +854,7 @@ nav{
 }
 
 .main-image img{
+  width: 100%;
   height: auto;
 }
 
@@ -987,7 +989,9 @@ nav{
   }
   .main-text-button{
     margin-top: 20px; 
-}}
+}
+
+}
 
 @media screen and (max-height:479px){
 
@@ -999,6 +1003,8 @@ nav{
 .main-text-p p{
   line-height: 28px;
 }
+
+
 }
 
 @media screen and (max-height:416px){

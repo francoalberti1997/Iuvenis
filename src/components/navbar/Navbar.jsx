@@ -57,7 +57,7 @@ const Navbar = () => {
                 
             <div className='nav-section-burguer'>
                 <div className="nav-section"><p><a href="/">Inicio <i class="fa fa-home" aria-hidden="true"></i></a></p></div>
-                <div className="nav-section"><p><a href="">Investigación <i class="fa fa-flask" aria-hidden="true"></i></a></p></div>
+                <div className="nav-section"><p><a href="#Servicios">Servicios</a></p></div>
                 <div className="nav-section"><p><a href="">Colaboradores <i class="fa fa-search" aria-hidden="true"></i></a></p></div>
                 <div className="nav-section"><p><a href="">Mision <i class="fa fa-check" aria-hidden="true"></i></a></p></div>
                 <div className="nav-section"><p><a href="">Contacto <i class="fa fa-user-o" aria-hidden="true"></i></a></p></div>
