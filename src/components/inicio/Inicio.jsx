@@ -1,6 +1,6 @@
 import React from 'react'
 // import logo_square from "../inicio/1mPossible.jpg"
-import logo_square from "../inicio/logo_nuevo.jpg"
+import logo_square from "../inicio/logo_nuevo_fondo.jpg"
 import portada from '../inicio/portada.jpg'
 
 const Inicio = () => {
@@ -14,7 +14,7 @@ const Inicio = () => {
             <div className="inicio-text">
             
                 <div className="inicio-text-image">
-                    <img src="https://i.pinimg.com/originals/8a/e2/ed/8ae2ede9e335295189021881938f2dac.gif" alt="" />
+                    <img src={logo_square} alt="" />
                 </div>
                 <div className="inicio-text-title">
                     <h2>

@@ -9,7 +9,7 @@ return (
           <div className="main-text-p">
             <h2>Criogenia</h2>
             <p>
-            <b>1mpossible</b> innova en criogenia, abordando desafíos para la preservación corporal. No solo proveemos servicios, sino que somos aliados comprometidos en hallar soluciones, mejorando la tecnología criogénica y explorando avances en antiaging. Nos comprometemos a persistir en la búsqueda de respuestas.            </p>
+            <b>1mPossible</b> innova en criogenia, abordando desafíos para la preservación corporal. No solo proveemos servicios, sino que somos aliados comprometidos en hallar soluciones, mejorando la tecnología criogénica y explorando avances en antiaging. Nos comprometemos a persistir en la búsqueda de respuestas.            </p>
             <div className='main-text-button'>
             Ver Más Información
             </div>

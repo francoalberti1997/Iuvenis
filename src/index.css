@@ -273,9 +273,9 @@ nav{
 }
 
 .inicio-text-image img{
-  width: 100%;
+  width: 90%;
   background-size: cover;
-  aspect-ratio:  807 / 504;
+  aspect-ratio:  1 / 1;
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 20px;
