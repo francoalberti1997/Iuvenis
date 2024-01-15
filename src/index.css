@@ -837,19 +837,6 @@ nav{
   
 }
 
-@media screen and (max-width:1118px) and (max-height:450px){
-  .criogenia{
-    height: auto !important;
-  }
-  .main-text{
-    justify-content: none;
-  }
-
-  .main-image img{
-    width: 100%;
-    height: auto;
-  }
-}
 
 
 
@@ -901,7 +888,7 @@ nav{
 }
 
 
-@media screen and (max-width: 435px){
+@media screen and (max-width: 450px){
   .mobile-text h2{
     font-size: 35px !important;
     line-height: 66px;
@@ -917,6 +904,7 @@ nav{
   .nav{
     overflow: hidden;
   }
+  
 }
 
 
@@ -1033,7 +1021,17 @@ nav{
 .main-text-p p{
   line-height: 28px;
 }
+.criogenia{
+  height: auto !important;
+}
+.main-text{
+  justify-content: none;
+}
 
+.main-image img{
+  width: 100%;
+  height: auto;
+}
 
 }
 

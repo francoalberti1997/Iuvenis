@@ -17,3 +17,5 @@ navbar al estilo cambia y sigue al bajar
 Colaboradores y sobre el proyecto
 
 Seccion extra ver más Tipo artículo
+
+bloquear scroll en burguer
