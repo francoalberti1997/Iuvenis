@@ -1,6 +1,12 @@
 https://www.lanevol.org/who TIENE QUE ESTAR
 
-ponerle el cubo de icono mejor 
+
+Arreglar navbar (HECHO)
+
+100 vh main 
+
+Responsive el servicios
+
 
 Poner ser parte del equipo
 
