@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import logo from "../navbar/1mPossible.png"
 import logo_new from "../inicio/logo_nuevo.jpg"
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -43,24 +44,24 @@ const Navbar = () => {
         </div>
 
         <div id="second-line">
-            <div className="nav-section"><p><a href="">Inicio</a></p></div>
+            <div className="nav-section"><p><Link to="/">Inicio</Link></p></div>
             <div className="nav-section"><p><a href="#Servicios">Servicios</a></p></div>
+            <div className="nav-section"><p><a href="#Investigación">Investigación</a></p></div>
             <div className="nav-section"><p><a href="">Nosotros</a></p></div>
-            <div className="nav-section"><p><a href="">Mision</a></p></div>
             <div className="nav-section"><p><a href="">Contacto</a></p></div>
         </div>
         
-        <div id="second-line-burguer" className={clicked ? 'active' : ''}>
+        <div id="second-line-burguer" className={clicked ? 'active' : ''}>  
             <div id="img-banner" className={clicked ? 'active' : ''}>
                 <div className="logo-imagen-section"><img src={logo_new} alt="" /></div>
             </div>
                 
             <div className='nav-section-burguer'>
-                <div className="nav-section"><p><a href="/">Inicio <i class="fa fa-home" aria-hidden="true"></i></a></p></div>
-                <div className="nav-section"><p><a href="#Servicios">Servicios</a></p></div>
-                <div className="nav-section"><p><a href="">Colaboradores <i class="fa fa-search" aria-hidden="true"></i></a></p></div>
-                <div className="nav-section"><p><a href="">Mision <i class="fa fa-check" aria-hidden="true"></i></a></p></div>
-                <div className="nav-section"><p><a href="">Contacto <i class="fa fa-user-o" aria-hidden="true"></i></a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="">Inicio</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="#Servicios">Servicios</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="#Investigación">Investigación</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="">Nosotros</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="">Contacto</a></p></div>
             </div>
         </div>
         

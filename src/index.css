@@ -307,17 +307,39 @@ nav{
 
 }
 
+
+/*SERVICIOS*/
+
+.title-components{
+  color: var(--verde_claro);
+  font-size: 30px;
+  height: auto;
+  font-weight: 300;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+  margin-top: 65px;
+  /* border-bottom: solid 1px var(--gris_claro); */
+  /* border-top: solid 1px var(--gris_claro); */
+
+  /* line-height: 75px; */
+}
+
+.title-components i{
+  color: var(--negro);
+  font-size: 30px;
+
+  /* line-height: 75px; */
+}
+
 /*CRIOGENIA*/
 
 .servicios{
   display: flex;
   margin-top: 60px;
 
-
 }
 
 .criogenia{
-  background-color: var(--blanco);
   display: flex;
   height: 100vh;
   width: 100%;
@@ -339,6 +361,7 @@ nav{
   box-sizing: border-box;
   margin-right: 20px;
   overflow: hidden;
+  /* order: 1; */
 }
 
 .main-image img{
@@ -347,7 +370,7 @@ nav{
   background-size: cover;
   height: 80%;
   width: auto;
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 .main-text{
@@ -356,7 +379,9 @@ nav{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* order: 2; */
 }
+
 
 .main-text-p{
   height: 80%;
@@ -364,6 +389,8 @@ nav{
   background-color: var(--blanco);
   border-radius: 25px;
   margin: 10px;
+  margin-top: 25px;
+
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -372,6 +399,16 @@ nav{
   box-sizing: border-box;
   margin-top: 25px;
 }
+
+#texto_p{
+  justify-content: end !important ;
+  height: auto;
+}
+
+#texto_p .main-text-button{
+  display: none;
+}
+
 
 .main-text-p h2{
   color: var(--verde);
@@ -413,6 +450,36 @@ nav{
 .main-text-button:hover{
   opacity: 0.8;
 }
+
+.main-text-button a{
+  text-decoration: none;
+  color: var(--blanco);
+}
+
+/*WSP*/
+
+.logo-wsp{
+  position: fixed;
+  top: 85%;
+  right: 5%;
+  padding: 15px;
+  border-radius: 100%;
+  background-color: rgb(144, 212, 42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo-wsp i{
+  font-size: 45px;
+  margin-right: 0;
+  margin-top: 5px;
+  background-color: rgb(144, 212, 42);
+  color: #fff;
+}
+
+
 
 @media screen and(max-width:1100px){
   

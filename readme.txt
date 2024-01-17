@@ -1,9 +1,6 @@
 https://www.lanevol.org/who TIENE QUE ESTAR
 
 
-Arreglar navbar (HECHO)
-
-100 vh main 
 
 Responsive el servicios
 
@@ -19,3 +16,10 @@ Colaboradores y sobre el proyecto
 Seccion extra ver más Tipo artículo
 
 bloquear scroll en burguer
+
+nav queda:
+
+servicios
+Investigacion
+nostros (incluye Colaboradores y mision)
+Donación?

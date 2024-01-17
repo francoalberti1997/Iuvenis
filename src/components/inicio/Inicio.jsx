@@ -5,7 +5,7 @@ import portada from '../inicio/portada.jpg'
 
 const Inicio = () => {
   return (
-        <div className='inicio'>
+        <div className='inicio' id=''>
             
             <div className="inicio-wrapper-image">
                 <img src={portada} alt="" />
