@@ -14,7 +14,7 @@ const Components = ({props}) => {
             </p>
 
             <div className='main-text-button'>
-              <a href={`/${props.title}/`}>Ver Más Información</a>
+              <a href={`/${props.title}`}>Ver Más Información</a>
             </div>
           </div>
         </div>

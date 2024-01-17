@@ -140,10 +140,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<ServiciosPage />} />
-        <Route path="/Criogenia/" element={<Criogenia />} />
-        <Route path="/Rejuvenating/" element={<Rejuvenating />} />
-        <Route path="/Lifeextension/" element={<Lifeextension />} />
-        <Route path="/Aging/" element={<Aging />} />
+        <Route path="/Criogenia" element={<Criogenia />} />
+        <Route path="/Rejuvenating" element={<Rejuvenating />} />
+        <Route path="/Lifeextension" element={<Lifeextension />} />
+        <Route path="/Aging" element={<Aging />} />
       </Routes>
     </Router>
   );
