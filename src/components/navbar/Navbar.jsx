@@ -45,9 +45,9 @@ const Navbar = () => {
 
         <div id="second-line">
             <div className="nav-section"><p><Link to="/">Inicio</Link></p></div>
-            <div className="nav-section"><p><Link to="/#Servicios">Servicios</Link></p></div>
-            <div className="nav-section"><p><Link to="/#Investigación">Investigación</Link></p></div>
-            <div className="nav-section"><p><a href="">Nosotros</a></p></div>
+            <div className="nav-section"><p><a href='/#Servicios'>Servicios</a></p></div>
+            <div className="nav-section"><p><a href='/#Investigación'>Investigación</a></p></div>
+            <div className="nav-section"><p><a href="/#General">Nosotros</a></p></div>
             <div className="nav-section"><p><a href="">Contacto</a></p></div>
         </div>
         
@@ -58,9 +58,9 @@ const Navbar = () => {
                 
             <div className='nav-section-burguer'>
             <div className="nav-section" onClick={toggleMenu}><p><Link to="/">Inicio</Link></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><Link to="/#Servicios">Servicios</Link></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><Link to="/#Investigación">Investigación</Link></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href="">Nosotros</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Servicios'>Servicios</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Investigación'>Investigación</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="/#General">Nosotros</a></p></div>
             <div className="nav-section" onClick={toggleMenu}><p><a href="">Contacto</a></p></div>
             </div>
         </div>
