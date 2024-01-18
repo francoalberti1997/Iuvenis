@@ -3,12 +3,22 @@ import Navbar from "./components/navbar/Navbar";
 import Inicio from "./components/inicio/Inicio";
 import Servicios from "./components/Servicios/Servicios";
 import Wsp from "./components/wsp/Wsp";
+import franco from "../src/components/team/perfil_franco.jpg"
+
+import daniela from "../src/components/team/Daniela.jpg"
+import felipe from "../src/components/team/Felipe.jpg"
+import samanta from "../src/components/team/Samanta.jpg"
+import seba from "../src/components/team/Seba.jpg"
+
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
+import Team from "./components/team/Team";
+
 
 const ServiciosPage = () => (
   <>
@@ -54,6 +64,64 @@ const ServiciosPage = () => (
         },
       ]}
     />
+    <Team
+          staff={"CEO"}
+          rol={"General"}
+          icons={"fa-solid fa-user-tie"}
+        componentes={[
+          {
+            usuario: seba,
+            rol: "CEO",
+            nombre: "Sebastián Cippitelli",
+            profesion: "Director General de 1mPossible",
+            texto: "Sebastián Cippitelli, Director de 1mPossible, es un visionario dedicado a superar límites en ciencia y biomedicina, con la audaz misión de vencer la mortalidad."
+          },
+          // Puedes agregar más objetos con datos aquí según sea necesario
+        ]}
+      />
+      <Team
+        staff={"Nuestros Científicos"}
+        icons={"fa-solid fa-graduation-cap"}
+
+        componentes={[
+          {
+            "usuario": daniela,
+            "rol": "Científico",
+            "nombre": "Daniela López De Luise",
+            "profesion": "Doctora en Ciencias Informáticas",
+            "texto": "Doctora en Ciencias Informáticas, lidera el CIIS LAB en inteligencia artificial. Su proyecto actual en el Museo Histórico Sarmiento busca fomentar la enseñanza STEAM."
+          },
+          {
+            "usuario": felipe,
+            "rol": "Científico",
+            "nombre": "Felipe Bruno Dias de Oliveira",
+            "profesion": "Doctor en Ciencias de la Salud",
+            "texto": "Doctor en Ciencias de la Salud, formado en Albert Einstein y reconocido por Oxford, investiga en la Universidad de Buenos Aires, destacándose en mecanobiología."
+          },
+          {
+            "usuario": samanta,
+            "rol": "Científico",
+            "nombre": "Samanta Adriana Reyes Molina",
+            "profesion": "Doctora en Ciencias Edafología",
+            "texto": "Doctora en Ciencias Edafología y Licenciada en Biología, especializada en ecología y fisiología vegetal. Líder ambiental comprometida con proyectos sostenibles."
+        },          // Puedes agregar más objetos con datos aquí según sea necesario
+        ]}
+      />
+
+<Team
+        staff={"Nuestros Técnicos"}
+        icons={"fa-solid fa-wrench"}
+        componentes={[
+          {
+            "usuario": franco,
+            "rol": "Colaborador",
+            "nombre": "Franco Alberti",
+            "profesion": "Digital Business Developer",
+            "texto": "Desarrollador Full Stack y Emprendedor especializado en negocios digitales con amplia experiencia en la creación de plataformas digitales y estrategias de marketing online."
+          }       // Puedes agregar más objetos con datos aquí según sea necesario
+        ]}
+      />
+
   </>
 );
 
