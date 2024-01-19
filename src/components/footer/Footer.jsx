@@ -1,9 +1,9 @@
 import React from 'react'
-
 const Footer = () => {
   return (
     <div className='footer'>
-        <p>©2024 Franco Alberti | All Rights Reserved</p>
+        <img src="" alt="" />
+        <p>©2024 1mPossible | All Rights Reserved</p>
     </div>
   )
 }
