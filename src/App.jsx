@@ -191,6 +191,7 @@ const Criogenia = () => (
 
         },
       ]}/>
+
   </>
 );
 
@@ -216,6 +217,7 @@ const Rejuvenating = () => (
           id_css: "texto_p",
 
         }]}/>
+
   </>
 );
 
@@ -241,6 +243,7 @@ const Lifeextension = () => (
           id_css: "texto_p",
 
         }]}/>
+
   </>
 );
 
@@ -265,6 +268,7 @@ const Aging = () => (
             "https://hips.hearstapps.com/hmg-prod/images/portrait-of-man-holding-younger-photo-of-himself-royalty-free-image-1685552323.jpg",
           id_css: "texto_p",
         }]}/>
+
   </>
 );
 
@@ -279,6 +283,8 @@ const ColaboradorPage = (props) => (
       texto={props.texto}
       link={props.link}
     />
+        <Footer/>
+
   </>
 );
 
