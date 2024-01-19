@@ -24,7 +24,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Team from "./components/team/Team";
-import Colaboradores from "./components/Colaboradores/colaboradores";
+import Colaboradores from "./components/Colaboradores/Colaboradores";
 import Mision from "./components/mision/Mision";
 import Footer from "./components/footer/Footer";
 
