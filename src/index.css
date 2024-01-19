@@ -18,6 +18,8 @@
   padding: 0;
 }
 
+
+
 #mobile{
   display: none;
 }
@@ -345,6 +347,7 @@ nav{
   width: 100%;
   overflow: hidden;
   margin-top: 20px;
+  
 }
 
 .main-image,
@@ -616,6 +619,147 @@ nav{
   font-family: "Railway" sans-serif;
   color: var(--verde_claro);
 }
+
+
+/*Colaborador*/
+
+
+.colaborador{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verde_claro);
+
+}
+
+.presentacion, .texto-colaborador{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px;
+
+}
+
+.presentacion {
+  box-sizing: border-box;
+ flex-direction: column;
+ height: auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  text-align: center;
+}
+
+.texto-colaborador{
+  width: 90%;
+}
+
+.presentacion-corta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentacion h2{
+  color: var(--verde);
+  font-size: 55px;
+  height: auto;
+  font-weight: 900;
+  font-family: 'Raleway', sans-serif;
+}
+
+.presentacion h3{
+  color: var(--gris_claro);
+  font-size: 27px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  line-height: 60px;
+  width: 80%;
+}
+
+.imagen-presentacion{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.wrapper-image{
+  height:280px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.wrapper-image img{
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.wrapper-icons{
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  font-size: 35px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper-icons i{
+  color: var(--gris_claro);
+  cursor: pointer;
+}
+
+.texto-colaborador p{
+  color: var(--negro);
+  font-size: 20px;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+  line-height: 60px;
+  text-align: center;
+}
+
+#mision{
+  background-color: var(--blanco);
+}
+
+#mision .main-text-p{
+  background-color: var(--blanco);
+}
+
+#mision img{
+  max-width: 350px;
+  max-height: 350px; 
+}
+
+/*FOOTER*/
+
+.footer{
+  height: 300px;
+  width: 100%;
+  background-color: var(--negro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.footer p{
+  color: var(--blanco);
+  font-size: 26px;
+}
+
 
 @media screen and(max-width:1100px){
   

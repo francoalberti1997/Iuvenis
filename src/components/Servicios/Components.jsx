@@ -2,7 +2,7 @@ import React from 'react'
 
 const Components = ({props}) => {
   return (
-    <div className="servicios" >
+    <div className="servicios" id={props.link_a}>
     
     <div className='criogenia' id={props.id_css}>
         
@@ -14,7 +14,12 @@ const Components = ({props}) => {
             </p>
 
             <div className='main-text-button'>
+            {props.link ? (
+              <a href={`/${props.link}/`}>Ver Más Información</a>
+            ) : (
               <a href={`/${props.title}`}>Ver Más Información</a>
+            )}
+
             </div>
           </div>
         </div>

@@ -1,6 +1,11 @@
 import React from 'react'
 
 const Card = (props) => {
+
+  // const nombre = props.nombre.replace(/\s+/g, "-");
+
+
+
   return (
     <div className="card">
         <div className="squareBox"></div>
@@ -22,7 +27,7 @@ const Card = (props) => {
         </div>
 
         <div className='main-text-button Card'>
-            <a href="">Ver Más</a>
+            <a href={`/Colaborador/${props.nombre}/`}>Ver Más</a>
         </div>
     </div>
   )
