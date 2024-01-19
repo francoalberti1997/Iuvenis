@@ -340,14 +340,12 @@ Daniela es Doctora en Ciencias Informáticas por la Universidad Nacional de La P
       nombre: 'Felipe Bruno Dias de Oliveira',
       profesion: 'Doctor en Ciencias de la Salud',
       texto: `
-      La Doctora Samanta Reyes Molina es una apasionada investigadora que ha dedicado su vida a explorar los secretos de la biología. 
-En el año 2000 se sumergió en el fascinante mundo de la Biología, graduándose con honores en el año 2006. Este fue solo el comienzo de su viaje. Después de nutrir su curiosidad en la licenciatura, Samanta decidió llevar su conocimiento al siguiente nivel. Se aventuró en el Colegio de Postgraduados Campus Montecillo, donde se convirtió en Maestra en Ciencias Botánica entre 2008 y 2011..
-En 2016 obtiene su Doctorado en Ciencias Edafología en el mismo Colegio de Postgraduados. Con dedicación y pasión, exploró los misterios del suelo y desentrañó los secretos que este guardaba.
-Samanta se convirtió en una valiosa colaboradora en proyectos de ecología, explorando los poblados de cactáceas en el Valle de Cuatro Ciénegas, Coahuila. También se destacó como asistente de investigación, enseñando fisiología vegetal y contribuyendo a proyectos de investigación que buscaban mejorar la calidad de vida de las plantas.
-Actualmente Samanta está inmersa en una Maestría en Nutrición Deportiva en el Instituto de Estudios Superiores de Ingeniería Educativa.
-Sus intereses científicos son tan vastos como su sed de conocimiento. Desde gestión de proyectos sustentables hasta auditorías ambientales, pasando por cultivos in vitro y clasificación taxonómica de plantas, Samanta es una exploradora incansable del mundo científico. Actualmente con intereses de investigación en el area de criogenia, envejecimiento y antia-ging.
-Posee habilidades excepcionales. Es organizada, profesional, motivada y aprende con rapidez. Su compromiso con el avance científico se refleja en su participación activa en congresos y su constante búsqueda de cursos y certificaciones.
-Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el progreso científico.
+      
+Felipe Bruno Dias de Oliveira es Doctor en Ciencias de la Salud (Envejecimiento) (2020), con distinción honorífica, egresado de la Facultad Israelita de Ciencias de la Salud Albert Einstein - Instituto Israelita de Enseñanza e Investigación Albert Einstein y reconocido como "Estudiante Destacado" por la Universidad de Oxford - Instituto Kennedy de Reumatología (2019-2020). Inició su formación académica con una Maestría en Desarrollo Humano y Tecnologías (Tecnologías y Rendimiento Humano) (2013) y obtuvo su Licenciatura en Educación Física (2010) en la Universidad Estatal Paulista Júlio de Mesquita Filho - Instituto de Biociencias.
+
+Actualmente, esta dedicado al estudio de la medicina en la Universidad de Buenos Aires - Facultad de Medicina. Sus intereses académicos incluyen la mecanobiología, cartílago articular, fisiopatología de la osteoartritis, terapia celular y tratamiento conservador con ejercicio físico.
+
+Su trayectoria académica y sus contribuciones en el campo de la salud, especialmente en el área de envejecimiento, respaldan su compromiso con la investigación y la excelencia académica.
 
       `,
     },
