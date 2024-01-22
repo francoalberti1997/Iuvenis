@@ -1390,13 +1390,15 @@ nav{
   }
 }
 
-
+#second-line-burguer{
+  z-index: 100 !important;
+}
 
 @media screen and (max-height:680px){
 
   #second-line-burguer{
     /* top: 100px; */
-    z-index: 1000;
+    z-index: 100 !important;
   }
 
   .main-text-p p{
