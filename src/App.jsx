@@ -210,7 +210,7 @@ const Criogenia = () => (
         },
 
         {
-          title: "Procedimiento técnico estándar",
+          title: "Método técnico estándar",
           section: "Servicios",
           texto_p:
           `

@@ -504,10 +504,6 @@ nav{
   z-index: 1; /* Asegura que el h1 esté por encima del fondo negro */
 }
 
-.main-text-p h2{
-  margin-left: 25px;
-}
-
 /*WSP*/
 
 .logo-wsp{
