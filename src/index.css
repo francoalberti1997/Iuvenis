@@ -1396,7 +1396,7 @@ nav{
 
   #second-line-burguer{
     /* top: 100px; */
-    z-index: 1;
+    z-index: 1000;
   }
 
   .main-text-p p{
