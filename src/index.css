@@ -319,21 +319,25 @@ nav{
   font-weight: 300;
   font-family: 'Oxygen', sans-serif;
   text-align: center;
+  background-color: var(--negro);
   margin-top: 65px;
+  height: 80px;
+  justify-content: start;
+  display: flex;
   /* border-bottom: solid 1px var(--gris_claro); */
   /* border-top: solid 1px var(--gris_claro); */
 
   /* line-height: 75px; */
 }
 
-.title-components i{
-  color: var(--negro);
-  font-size: 30px;
-
+.title-components h1{
+  font-size: 38px;
+  color: var(--blanco);
   /* line-height: 75px; */
 }
 
 /*CRIOGENIA*/
+
 
 .servicios{
   display: flex;
@@ -369,9 +373,10 @@ nav{
 
 .main-image img{
   height: auto;
-  aspect-ratio: 483 / 322 !important;
+  aspect-ratio: 1 / 1 !important;
   background-size: cover;
   height: 80%;
+  max-height: 800px;
   width: auto;
   /* opacity: 1; */
 }
@@ -393,7 +398,6 @@ nav{
   border-radius: 25px;
   margin: 10px;
   margin-top: 25px;
-
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -457,6 +461,51 @@ nav{
 .main-text-button a{
   text-decoration: none;
   color: var(--blanco);
+}
+
+.criogenia_special_section{
+  background-color: none;
+}
+.title-h1 {
+  position: relative;
+  width: 100%;
+  background-color: var(--negro);
+  display: flex;
+  justify-content: flex-end; /* Cambiado a flex-end */
+  align-items: center;
+  text-align: center;
+  height: 165px;
+}
+
+.title-wallpaper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://png.pngtree.com/background/20230303/original/pngtree-dna-colorful-biology-picture-image_2083460.jpg");
+  background-size: cover;
+  opacity: 0.2; /* Ajusta la opacidad según tus preferencias */
+}
+
+/* .title-h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+.title-h1 h1 {
+  position: relative; /* Agregado */
+  font-size: 49px;
+  margin-right: 80px;
+  color: var(--blanco);
+  font-family: 'Raleway', sans-serif;
+  z-index: 1; /* Asegura que el h1 esté por encima del fondo negro */
+}
+
+.main-text-p h2{
+  margin-left: 25px;
 }
 
 /*WSP*/
@@ -731,7 +780,10 @@ nav{
 }
 
 #mision{
+  height: auto;
+  min-height: 100vh;
   background-color: var(--blanco);
+  padding-bottom: 50px;
 }
 
 #mision .main-text-p{
@@ -750,7 +802,8 @@ nav{
   width: 100%;
   background-color: var(--negro);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
   padding-top: 65px;
@@ -759,6 +812,12 @@ nav{
 .footer p{
   color: var(--blanco);
   font-size: 26px;
+}
+
+.diseño-footer, .diseño-footer a{
+  text-decoration: none;
+  font-size: 26px;
+  color: var(--gris_claro);
 }
 
 

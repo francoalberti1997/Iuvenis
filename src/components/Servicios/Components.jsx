@@ -2,7 +2,7 @@ import React from 'react'
 
 const Components = ({props}) => {
   return (
-    <div className="servicios" id={props.link_a}>
+    <div className={`servicios ${props.link_class}`} id={props.link_a}>
     
     <div className='criogenia' id={props.id_css}>
         
@@ -10,7 +10,7 @@ const Components = ({props}) => {
           <div className="main-text-p">
             <h2>{props.title}</h2>
             <p>
-              <b>1mPossible</b> {props.texto_p}
+              {props.texto_p}
             </p>
 
             <div className='main-text-button'>

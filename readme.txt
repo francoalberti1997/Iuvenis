@@ -1,15 +1,15 @@
 
 
-Responsive el servicios
 
-Poner ser parte del equipo
+btn Poner ser parte del equipo
 
-banderitas en lugar de ENG 
+banderitas en lugar de ENG
 
-navbar al estilo cambia y sigue al bajar 
+navbar al estilo cambia y sigue al bajar (opcional)
 
-bloquear scroll en burguer
+FOOTER (mi nombre)
 
-FOOTER
+mejorar un poco sección criogenia()
 
-boton contacto wsp en colaboradores
+
+

@@ -42,7 +42,7 @@ const ServiciosPage = () => (
           title: "Criogenia",
           section: "Servicios",
           texto_p:
-            "Innova en criogenia, abordando desafíos para la preservación corporal. No solo proveemos servicios, sino que somos aliados comprometidos en hallar soluciones, mejorando la tecnología criogénica y explorando avances en antiaging. Nos comprometemos a persistir en la búsqueda de respuestas.",
+            "1mPossible innova en criogenia, abordando desafíos para la preservación corporal. No solo proveemos servicios, sino que somos aliados comprometidos en hallar soluciones, mejorando la tecnología criogénica y explorando avances en antiaging. Nos comprometemos a persistir en la búsqueda de respuestas.",
           imagen:
             "https://www.thoughtco.com/thmb/gpXe4f-4MQeNFrH4CMuWPya2aTw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egg-storage-for-ivf-478187231-59491b7c3df78c537bc0b778.jpg",
         },
@@ -59,16 +59,16 @@ const ServiciosPage = () => (
             "https://wacenter.org/wp-content/uploads/2023/03/anti-aging.jpg",
         },
         {
-          title: "Anti-Aging",
+          title: "Anti Aging",
           texto_p:
-            "y su innovador Departamento de Anti-aging se dedica a ralentizar los signos del envejecimiento a través de la implementación de hábitos saludables, suplementos de última generación, cremas rejuvenecedoras y tratamientos especializados.",
+            "1mPossible y su innovador Departamento de Anti-aging se dedica a ralentizar los signos del envejecimiento a través de la implementación de hábitos saludables, suplementos de última generación, cremas rejuvenecedoras y tratamientos especializados.",
           imagen:
             "https://hips.hearstapps.com/hmg-prod/images/portrait-of-man-holding-younger-photo-of-himself-royalty-free-image-1685552323.jpg",
         },
         {
-          title: "Lifeextension",
+          title: "Life extension",
           texto_p:
-            "garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación.",
+            "1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación.",
           imagen:
             "https://wallpaperaccess.com/full/2351892.jpg",
         },
@@ -179,18 +179,119 @@ const Criogenia = () => (
     <Wsp />
 
     <Servicios
+      title_special="Criogenia"
+      render="si"
       componentes={[
         {
-          title: "Criogenia",
+          title: "Seguridad",
           section: "Servicios",
           texto_p:
-          "presenta una vanguardista línea de investigación que aborda de manera integral todos los desafíos inherentes a las técnicas actuales. Nuestro enfoque se centra en ofrecer una solución definitiva mientras garantizamos la preservación óptima del cuerpo y sus estructuras mediante nuestro avanzado sistema de criogenia. En 1mpossible, no solo somos proveedores de servicios criogénicos, sino el aliado comprometido que persistirá hasta encontrar una resolución satisfactoria para sus necesidades. Nuestra labor constante de investigación se extiende a la mejora continua tanto de la tecnología criogénica como de los avances en antiaging y rejuvenecimiento. Consideramos la criogenia no como un fin en sí misma, sino como una poderosa herramienta, un medio para alcanzar resultados concretos. En el caso de que no sea posible revertir la situación del cliente en el presente, ofrecemos una etapa transitoria donde su cuerpo será preservado temporalmente hasta hallar la solución definitiva. En 1mpossible, estamos comprometidos con llevarlo a un puerto seguro, demostrando que más allá de ser competidores, somos el guerrero definitivo que persistirá incansablemente en la búsqueda de respuestas para sus necesidades.",
+          "Los tubos de criogenia, parte esencial de nuestro proceso, no dependen de suministro eléctrico para su mantenimiento, asegurando su protección y su integridad física en todo momento. En 1mPossible, su seguridad es nuestra máxima prioridad. No solo preservamos su integridad, sino que garantizamos la continuidad de los tratamientos ante cualquier eventualidad, ya sea una ruptura del sistema o una catástrofe natural. En cada paso que damos, en cada decisión que tomamos, su seguridad y bienestar son consideraciones centrales. Con 1mPossible, su futuro está resguardado en un entorno que prioriza la seguridad y la continuidad de la vida."
+          ,
           imagen:
             "https://www.thoughtco.com/thmb/gpXe4f-4MQeNFrH4CMuWPya2aTw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egg-storage-for-ivf-478187231-59491b7c3df78c537bc0b778.jpg",
           id_css: "texto_p",
-
+          link_class: "criogenia_special_section",
         },
+        {
+          title: "Usted no esta muerto cuando su corazón deja de latir y deja de respirar",
+          section: "Servicios",
+          texto_p:
+          `La muerte está actualmente asociada con la pérdida de las funciones cerebrales. En cambio debería definirse como la pérdida irreversible de la vida de manera absoluta y definitiva, cuando la estructura cerebral está destruida. 
+          En el ámbito de la medicina, la muerte se asocia comúnmente con la pérdida irreversible de las funciones cerebrales. Sin embargo, la criónica propone una perspectiva innovadora al considerar la "muerte clínica" como una pausa metabólica, no un punto sin retorno. Este enfoque, respaldado por tecnologías emergentes como la nanotecnología, ofrece la posibilidad de reanimación.
+          Los científicos en criónica se ven obligados por regulaciones legales a esperar la declaración de muerte clínica, lo que prolonga el inicio del procedimiento. Es crucial entender que la criónica busca preservar vidas, no revivir a quienes ya han fallecido. Esta espera legal tiene un impacto mínimo en la preservación efectiva de la vida del paciente.
+          La criónica plantea la posibilidad teórica de preservar un cuerpo humano a temperaturas extremadamente bajas, con el potencial de ser revivido en el futuro. Aunque aún no se ha realizado con éxito en humanos, se explora el método de vitrificación para mantener la estructura neuronal, base de la mente humana, intacta.
+          El daño al detener el flujo sanguíneo durante 6 minutos o más, principalmente afecta a los vasos sanguíneos y no a las neuronas. La criónica aborda este desafío, sugiriendo que iniciar los procedimientos lo más temprano posible, idealmente dentro del primer minuto de la muerte clínica, es óptimo. Sin embargo, el método sigue siendo viable incluso si se inicia más tarde debido a restricciones legales.
+           `,
+          imagen:
+            "https://image.pbs.org/video-assets/KAID/science-trek/158279/images/mezzanine_801.jpg",
+          id_css: "texto_p",
+          link_class: "criogenia_special_section",
+        },
+
+        {
+          title: "Procedimiento técnico estándar",
+          section: "Servicios",
+          texto_p:
+          `
+          Después de la muerte legal, el paciente se sumerge en un baño de agua helada para acelerar el enfriamiento. 
+          Se aplica soporte cardiopulmonar mecánico para facilitar este proceso. La circulación rápida de agua enfría el cuerpo de 37°C a 10°C. 
+          Luego, se reemplaza la sangre y gran parte del agua por un crioprotector para prevenir la formación de hielo. Finalmente, el cuerpo se enfría a -120°C y luego a -196°C con nitrógeno líquido para su almacenamiento.
+La crioprotección, mediante compuestos como el glicerol, reduce o elimina la formación de hielo, evitando daños estructurales. Se evita la cristalización intracelular o extracelular, reduciendo el daño celular. La vitrificación, en comparación con la congelación, detiene el tiempo biológico sin causar daño estructural.
+
+          `,
+          imagen:
+          `https://media.licdn.com/dms/image/C4D1BAQHg6yM2QSvcyg/company-background_10000/0/1601919496557/reaction_biology_corporation_cover?e=2147483647&v=beta&t=7aPYMzEN7litvRUVsGUN2t-XSG57cdg6awboD5oFBcU`,
+          id_css: "texto_p",
+          link_class: "criogenia_special_section",
+        },
+
+
+        {
+          title: "La muerte clínica no es muerte en absoluto",
+          section: "Servicios",
+          texto_p:
+          `
+          Contrario a la creencia común, nuestra investigación revela que los 6 minutos después del paro cardíaco no son determinantes para el daño neurológico. Es cierto que la apoptosis de la estructura cerebral inicia en este momento, pero lleva muchas horas en completarse el proceso, preservando en gran medida las células cerebrales. La posibilidad de daño isquémico puede mitigarse con trasplante de células madre, que aumenta la tolerancia a la isquemia.
+Lo ideal es comenzar los procedimientos dentro de dos minutos de la declaración de la muerte clínica y no exceder los 15 minutos. El enfriamiento del cuerpo, crucial para evitar daño isquémico. 
+La reducción de temperatura causa hipotermia, deprimiendo la actividad proteasa y protegiendo la barrera hematoencefálica. Esto es esencial para evitar la exposición del parénquima cerebral al flujo sanguíneo y su consecuente deterioro.
+
+          `,
+          imagen:
+          "https://wallpapers.com/images/hd/beautiful-sunshine-ll7at0ykw22hm07f.jpg",
+          id_css: "texto_p",
+          link_class: "criogenia_special_section",
+        },
+
+        {
+          title: "La reanimación fue posible usando temperaturas mayores en animales",
+          section: "Servicios",
+          texto_p:
+          `
+          Experimentos con ratas, gatos y perros han demostrado tasas de reanimación exitosas utilizando técnicas de enfriamiento y sustitutos sanguíneos. Incluso se ha logrado reanimar ratas varias veces, indicando la viabilidad del proceso. Experimentos en perros han demostrado resistencia a la isquemia, y la aplicación de hipotermia ha mostrado resultados positivos sin deterioro neurológico significativo. En humanos, la parada cardíaca hipotérmica se ha realizado con éxito durante procedimientos quirúrgicos, respaldando la efectividad de enfoques similares. 
+
+
+          `,
+          imagen:
+          "https://static01.nyt.com/images/2019/09/10/multimedia/10xp-animaltesting1/10xp-animaltesting1-videoSixteenByNineJumbo1600-v2.jpg",
+          id_css: "texto_p",
+          link_class: "criogenia_special_section",
+        },
+
+        {
+          title: "Las mejoras en el ámbito legal",
+          section: "Servicios",
+          texto_p:
+          `
+          Después de la muerte legal, el paciente se sumerge en un baño de agua helada para acelerar el enfriamiento. 
+          Se aplica soporte cardiopulmonar mecánico para facilitar este proceso. La circulación rápida de agua enfría el cuerpo de 37°C a 10°C. 
+          Luego, se reemplaza la sangre y gran parte del agua por un crioprotector para prevenir la formación de hielo. Finalmente, el cuerpo se enfría a -120°C y luego a -196°C con nitrógeno líquido para su almacenamiento.
+La crioprotección, mediante compuestos como el glicerol, reduce o elimina la formación de hielo, evitando daños estructurales. Se evita la cristalización intracelular o extracelular, reduciendo el daño celular. La vitrificación, en comparación con la congelación, detiene el tiempo biológico sin causar daño estructural.
+
+          `,
+          imagen:
+          "https://www.centromedicounidoc.com/wp-content/uploads/2023/02/Medicina-Legal-y-Forense-en-Marbella-Centro-Medico-Unidoc.jpg",
+          id_css: "texto_p",
+          link_class: "criogenia_special_section",
+        },
+
+        {
+          title: "Nuestra propuesta técnica es superior a la existente",
+          section: "Servicios",
+          texto_p:
+          `
+          Nuestras investigaciones marcan un camino a seguir en cuanto a la preservación del paciente en las mejores condiciones posibles. Nuestra propuesta técnica es superior, anticipando resultados mejorados en la criopreservación. Con esta estrategia, buscamos optimizar la eficacia del proceso y prolongar la preservación de manera más efectiva.
+
+
+          `,
+          imagen:
+          "https://i0.wp.com/esrobross.com.ec/wp-content/uploads/2015/07/Business-HD-Wallpaper-1.jpg?ssl=1",
+          id_css: "texto_p",
+          link_class: "criogenia_special_section",
+        },
+        
       ]}/>
+      
 
   </>
 );
@@ -208,7 +309,7 @@ const Rejuvenating = () => (
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                "te invita a adentrarte en nuestra revolucionaria área de investigación, donde desafiamos los límites del envejecimiento. Nuestra dedicación se centra en revertir los marcadores del paso del tiempo, tales como sarcopenia, inflamación crónica, estrés oxidativo, longitud de los telómeros, y mucho más. Estamos comprometidos a ofrecerte una experiencia de rejuvenecimiento incomparable. <br> <b> En etapa de investigación</b>",
+                "1mPossible te invita a adentrarte en nuestra revolucionaria área de investigación, donde desafiamos los límites del envejecimiento. Nuestra dedicación se centra en revertir los marcadores del paso del tiempo, tales como sarcopenia, inflamación crónica, estrés oxidativo, longitud de los telómeros, y mucho más. Estamos comprometidos a ofrecerte una experiencia de rejuvenecimiento incomparable. <br> <b> En etapa de investigación</b>",
               }}
             />
           ),
@@ -234,7 +335,7 @@ const Lifeextension = () => (
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                "garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación. Con nosotros, tienes la garantía de vida, ahora y en el futuro. ¿Estás listo para transformar tu existencia? <br> <b> En etapa de investigación</b>",
+                "1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación. Con nosotros, tienes la garantía de vida, ahora y en el futuro. ¿Estás listo para transformar tu existencia? <br> <b> En etapa de investigación</b>",
               }}
             />
           ),
@@ -260,7 +361,7 @@ const Aging = () => (
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                  "presenta un innovador Departamento de Anti-aging, que se dedica a ralentizar los signos del envejecimiento a través de la implementación de hábitos saludables, suplementos de última generación, cremas rejuvenecedoras y tratamientos especializados. Sumado a esto, contamos con una exclusiva rama dedicada al estilo de vida y alimentación saludable, orientada hacia la prevención y el bienestar integral. <br> <b> En etapa de investigación</b>",
+                  "1mPossible presenta un innovador Departamento de Anti-aging, que se dedica a ralentizar los signos del envejecimiento a través de la implementación de hábitos saludables, suplementos de última generación, cremas rejuvenecedoras y tratamientos especializados. Sumado a esto, contamos con una exclusiva rama dedicada al estilo de vida y alimentación saludable, orientada hacia la prevención y el bienestar integral. <br> <b> En etapa de investigación</b>",
               }}
             />
           ),
@@ -416,8 +517,8 @@ Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el 
         <Route path="*" element={<ServiciosPage />} />
         <Route path="/Criogenia" element={<Criogenia />} />
         <Route path="/Rejuvenating" element={<Rejuvenating />} />
-        <Route path="/Lifeextension" element={<Lifeextension />} />
-        <Route path="/Anti-Aging" element={<Aging />} />
+        <Route path="/Life extension" element={<Lifeextension />} />
+        <Route path="/Anti Aging" element={<Aging />} />
         
         {colaboradorData.map((i)=>(
           <Route path={`/Colaborador/${i.nombre}/`} element={<ColaboradorPage nombre={i.nombre} imagen={i.usuario} titulo={i.profesion} texto={i.texto} link={i.link}/>}/>    
