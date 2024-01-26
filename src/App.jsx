@@ -40,6 +40,7 @@ const ServiciosPage = () => (
       componentes={[
         {
           title: "Criogenia",
+          main:"main-home",
           section: "Servicios",
           texto_p:
             "1mPossible innova en criogenia, abordando desafíos para la preservación corporal. No solo proveemos servicios, sino que somos aliados comprometidos en hallar soluciones, mejorando la tecnología criogénica y explorando avances en antiaging. Nos comprometemos a persistir en la búsqueda de respuestas.",
@@ -52,23 +53,29 @@ const ServiciosPage = () => (
       section={"Investigación"}
       componentes={[
         {
-          title: "Rejuvenating",
+          title: "Rejuvenation",
+          main:"main-home",
+
           texto_p:
-            "desafía los límites del envejecimiento. Nuestra dedicación se centra en revertir los marcadores del paso del tiempo, tales como sarcopenia, inflamación crónica, estrés oxidativo, longitud de los telómeros, y mucho más.",
+            "Desafía los límites del envejecimiento. Nuestra dedicación se centra en revertir los marcadores del paso del tiempo, tales como sarcopenia, inflamación crónica, estrés oxidativo, longitud de los telómeros, y mucho más.",
           imagen:
             "https://wacenter.org/wp-content/uploads/2023/03/anti-aging.jpg",
         },
         {
-          title: "Anti Aging",
+          title: "Antiaging",
+          main:"main-home",
+
           texto_p:
-            "1mPossible y su innovador Departamento de Anti-aging se dedica a ralentizar los signos del envejecimiento a través de la implementación de hábitos saludables, suplementos de última generación, cremas rejuvenecedoras y tratamientos especializados.",
-          imagen:
+        '1mPossible y su innovador Departamento de Anti-aging se dedica a ralentizar los signos del envejecimiento a través de la implementación de hábitos saludables, suplementos de última generación, cremas y tratamientos especializados.'
+ ,         imagen:
             "https://hips.hearstapps.com/hmg-prod/images/portrait-of-man-holding-younger-photo-of-himself-royalty-free-image-1685552323.jpg",
         },
         {
           title: "Life extension",
+          main:"main-home",
+
           texto_p:
-            "1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación.",
+          '1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su óptimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación.',
           imagen:
             "https://wallpaperaccess.com/full/2351892.jpg",
         },
@@ -99,7 +106,7 @@ const ServiciosPage = () => (
             "rol": "Científico",
             "nombre": "Daniela López De Luise",
             "profesion": "Doctora en Ciencias Informáticas",
-            "texto": "Doctora en Ciencias Informáticas, lidera el CIIS LAB en inteligencia artificial. Su proyecto actual en el Museo Histórico Sarmiento busca fomentar la enseñanza STEAM."
+            "texto": "Doctora en Ciencias Informáticas, lidera el CI2S LAB en inteligencia artificial. Su proyecto actual en el Museo Histórico Sarmiento busca fomentar la enseñanza STEAM."
           },
           {
             "usuario": felipe,
@@ -141,11 +148,14 @@ const ServiciosPage = () => (
       />
     {/* <Mision/> */}
     <Servicios
+
       componentes={[
         {
           link_a:"Mision",
           title: "Misión",
           id_css: "mision",
+          main:"main-home",
+
           texto_p:
             "Transforma el Presente. Garantiza el Futuro. En 1mPossible, nuestra misión es ofrecer a cada ser humano TIEMPO, una segunda oportunidad de disfrutar plenamente de la vida y celebrar los logros alcanzados en la misma. Cada persona debe ser capaz de decidir hasta cuando quiere vivir, y no ser esclava de su deterioro biológico. ",
           imagen:
@@ -160,8 +170,11 @@ const ServiciosPage = () => (
         {
           title: "Ubicación estratégica",
           id_css: "mision",
+          main:"main-home",
           texto_p:
-            "En 1mPossible, la seguridad es más que un lema; es el pilar fundamental que respalda cada aspecto de nuestro proyecto. . Iniciamos nuestras investigaciones en Buenos Aires, Argentina, y estamos orgullosos de anunciar la apertura planificada para enero del 2026 de nuestro centro operativo de criogenia en Zug, con oficinas centrales en Zúrich, Suiza",
+          `
+          En 1mPossible, la seguridad no es solo un lema, sino el pilar fundamental que respalda cada aspecto de nuestro proyecto. Iniciamos nuestras investigaciones en Buenos Aires, Argentina, y nos enorgullece anunciar la apertura planificada para enero de 2026 de nuestro centro operativo de criogenia en Zug, con oficinas centrales en Zúrich, Suiza.
+          `,
           imagen:
           ubicacion,
           link:"ubicacion"
@@ -280,7 +293,7 @@ La crioprotección, mediante compuestos como el glicerol, reduce o elimina la fo
           section: "Servicios",
           texto_p:
           `
-          Nuestras investigaciones marcan un camino a seguir en cuanto a la preservación del paciente en las mejores condiciones posibles. Nuestra propuesta técnica es superior, anticipando resultados mejorados en la criopreservación. Con esta estrategia, buscamos optimizar la eficacia del proceso y prolongar la preservación de manera más efectiva.
+          Nuestras investigaciones marcan un camino a seguir en cuanto a la preservación del paciente en las mejores condiciones posibles. Nuestra propuesta técnica es superior, anticipando resultados mejorados en la criopreservación. Nuestra propuesta técnica es superior, anticipando resultados mejorados en la criopreservación y buscando optimizar la eficacia del proceso para prolongar la preservación de manera más efectiva.
 
 
           `,
@@ -304,12 +317,12 @@ const Rejuvenating = () => (
     <Servicios
        componentes={[
         {
-          title: "Rejuvenating",
+          title: "Rejuvenation",
           texto_p: (
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                "1mPossible te invita a adentrarte en nuestra revolucionaria área de investigación, donde desafiamos los límites del envejecimiento. Nuestra dedicación se centra en revertir los marcadores del paso del tiempo, tales como sarcopenia, inflamación crónica, estrés oxidativo, longitud de los telómeros, y mucho más. Estamos comprometidos a ofrecerte una experiencia de rejuvenecimiento incomparable. <br> <b> En etapa de investigación</b>",
+"1mPossible te invita a explorar nuestra revolucionaria área de investigación, donde desafiamos los límites del envejecimiento. Nos dedicamos a revertir los marcadores del paso del tiempo, como la sarcopenia, la inflamación crónica, el estrés oxidativo, la longitud de los telómeros, y mucho más. Estamos comprometidos en ofrecerte una experiencia de rejuvenecimiento incomparable. Estamos en la etapa de investigación, explorando nuevas fronteras para mejorar tu bienestar.",
               }}
             />
           ),
@@ -356,12 +369,12 @@ const Aging = () => (
     <Servicios
        componentes={[
         {
-          title: "Anti-Aging",
+          title: "Antiaging",
           texto_p: (
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                  "1mPossible presenta un innovador Departamento de Anti-aging, que se dedica a ralentizar los signos del envejecimiento a través de la implementación de hábitos saludables, suplementos de última generación, cremas rejuvenecedoras y tratamientos especializados. Sumado a esto, contamos con una exclusiva rama dedicada al estilo de vida y alimentación saludable, orientada hacia la prevención y el bienestar integral. <br> <b> En etapa de investigación</b>",
+                "1mPossible presenta un innovador Departamento de Anti-aging dedicado a ralentizar los signos del envejecimiento mediante la implementación de hábitos saludables, suplementos de última generación y tratamientos especializados. Además, contamos con una exclusiva rama enfocada en el estilo de vida y la alimentación saludable, orientada hacia la prevención y el bienestar integral. Nos encontramos en una etapa de investigación constante, buscando continuamente nuevas formas de mejorar tu calidad de vida."
               }}
             />
           ),
@@ -426,14 +439,21 @@ function App() {
       profesion: 'Doctora en Ciencias Informáticas',
       link:{link_1:'https://r9.ieee.org/argentina-cis/inicio/autoridades/daniela-lopez-de-luise/ '},
       texto: `
-      La docente, investigadora y directora del Artificial Intelligence Group (AIGroup) de la Facultad de Ingeniería de la Universidad de Palermo (UP), Daniela López De Luise, fue designada en el 2013 presidente de Institute of Electrical and Electronics Engineers (IEEE Argentina), por votación casi unánime e histórica por la cantidad de votantes. 
- 
-Esta asociación profesional es la más grande del mundo y está dedicada al avance tecnológico y la innovación. Cuenta con más de 400 mil miembros en más de 160 países.
- 
-El nombramiento con el que ha sido distinguida la Dra. López De Luise, quien hace 28 años es miembro del IEEE, es un altísimo honor que muy pocos en la Argentina han recibido, debido a las altas exigencias del Instituto respecto a los candidatos. 
+      La docente, investigadora y directora del Artificial Intelligence Group (AIGroup) de la Facultad de Ingeniería de la Universidad de Palermo (UP), Daniela López De Luise, fue designada en el 2013 presidente de Institute of Electrical and Electronics Engineers (IEEE Argentina), por votación casi unánime e histórica por la cantidad de votantes.
 
-Daniela es Doctora en Ciencias Informáticas por la Universidad Nacional de La Plata, y es Ingeniera en Informática, entre sus otros títulos. Es actualmente la directora del laboratorio de investigaciones «Computational Intelligence And Information Systems Labs (CIIS LAB), asociación sin fines de lucro, dedicada al apalancamiento de la inteligencia artificial como investigación aplicada. Revista actualmente como Directora de la Especialización de Ensenanza de Ciencias de la Computación, UADER (Entre Ríos), y es profesora de Posgrado en tres instituciones: en la Universidad Austral, en la disciplina de aprendizaje automático, en la Universidad Abierta Interamericana UAI y en la Universidad Señor del Sipán (Perú). Presenta una extensa trayectoria como oradora en diversos eventos nacionales e internacionales, y ha publicado un centenar de trabajos relacionados con la disciplina de IA, creando conceptos como los wavelets morfosintácticos, aportando al estudio de la conciencia de robots y proponiendo nuevos mecanismos de propagación en el campo de los autómatas, como el caso del modelo de conciencia bacteriana. Es miembro del programa local de disertantes distinguidos de la IEEE Argentina. Fue Presidente del comité directivo de la IEEE Argentina en el período 2013-2014. Fundó y dirigió el laboratorio de investigaciones AI Group en la Universidad de Palermo. Es fundadora del Capítulo Argentino de la IEEE Computational Intelligence Society, y fue su primera Presidente (2005). También ha creado la red científica PI Network en 2008, dirigiendo la misma hasta 2013.  En su paso por el ITBA creó y dirigió el primer laboratorio de Bases de datos del ITBA, Instituto Tecnológico de Buenos Aires, hacia 1998, entre otras actividades. En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la IEEE Capitulo Argentina, y sus múltiples proyectos de investigación, desarrollo e innovación en torno a la inteligencia computacional. El último de ellos (2019) es versante sobre una novel arquitectura de islas de investigación, desarrollo e innovación, a radicarse en el Museo Histórico Sarmiento, en sociedad con la SCA (Sociedad Científica Argentina), con miras a lograr un lugar colaborativo para investigadores, empresas, organizaciones intermedias y docentes que deseen colaborar en la problemática de la enseñanza STEAM (ciencia, tecnología, ingeniería, arte y matemáticas).
-`,
+      Esta asociación profesional es la más grande del mundo y está dedicada al avance tecnológico y la innovación. Cuenta con más de 400 mil miembros en más de 160 países. El nombramiento con el que ha sido distinguida la Dra. López De Luise, quien hace 28 años es miembro del IEEE, es un altísimo honor que muy pocos en la Argentina han recibido, debido a las altas exigencias del Instituto respecto a los candidatos.
+      
+      Daniela es Doctora en Ciencias Informáticas por la Universidad Nacional de La Plata, e Ingeniera en Informática, entre sus otros títulos. Es actualmente la directora del laboratorio de investigaciones «Computational Intelligence And Information Systems Labs (CI2S  LAB), asociación sin fines de lucro, dedicada al apalancamiento de la inteligencia artificial como investigación aplicada.
+      
+      Revista actualmente como Directora de la Especialización de Ensenanza de Ciencias de la Computación, UADER (Entre Ríos), y es profesora de Posgrado en tres instituciones: en la Universidad Austral, en la disciplina de aprendizaje automático, en la Universidad Abierta Interamericana UAI y en la Universidad Señor del Sipán (Perú).
+      
+      Presenta una extensa trayectoria como oradora en diversos eventos nacionales e internacionales, y ha publicado un centenar de trabajos relacionados con la disciplina de IA, creando conceptos como los wavelets morfosintácticos, aportando al estudio de la conciencia de robots y proponiendo nuevos mecanismos de propagación en el campo de los autómatas, como el caso del modelo de conciencia bacteriana.
+      
+      Es miembro del programa local de disertantes distinguidos de la IEEE Argentina. Fue Presidente del comité directivo de la IEEE Argentina en el período 2013-2014. Fundó y dirigió el laboratorio de investigaciones AI Group en la Universidad de Palermo. Es fundadora del Capítulo Argentino de la IEEE Computational Intelligence Society, y fue su primera Presidente (2005). También ha creado la red científica PI Network en 2008, dirigiendo la misma hasta 2013. En su paso por el ITBA creó y dirigió el primer laboratorio de Bases de datos del ITBA, Instituto Tecnológico de Buenos Aires, hacia 1998, entre otras actividades.
+      
+      En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la IEEE Capitulo Argentina, y sus múltiples proyectos de investigación, desarrollo e innovación en torno a la inteligencia computacional. El último de ellos (2019) es versante sobre una novel arquitectura de islas de investigación, desarrollo e innovación, a radicarse en el Museo Histórico Sarmiento, en sociedad con la SCA (Sociedad Científica Argentina), con miras a lograr un lugar colaborativo para investigadores, empresas, organizaciones intermedias y docentes que deseen colaborar en la problemática de la enseñanza STEAM (ciencia, tecnología, ingeniería, arte y matemáticas).
+      
+      `,
     },
     {
       usuario: felipe,
@@ -516,9 +536,9 @@ Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el 
       <Routes>
         <Route path="*" element={<ServiciosPage />} />
         <Route path="/Criogenia" element={<Criogenia />} />
-        <Route path="/Rejuvenating" element={<Rejuvenating />} />
+        <Route path="/Rejuvenation" element={<Rejuvenating />} />
         <Route path="/Life extension" element={<Lifeextension />} />
-        <Route path="/Anti Aging" element={<Aging />} />
+        <Route path="/Antiaging" element={<Aging />} />
         
         {colaboradorData.map((i)=>(
           <Route path={`/Colaborador/${i.nombre}/`} element={<ColaboradorPage nombre={i.nombre} imagen={i.usuario} titulo={i.profesion} texto={i.texto} link={i.link}/>}/>    

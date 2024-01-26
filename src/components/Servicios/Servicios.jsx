@@ -5,7 +5,7 @@ const Servicios = (props) => {
   return (
     <>
     {
-      !props.render &&  <div className='title-components title-h1' id={props.section}>
+      !props.render &&  <div className={`title-components title-h1` } id={props.section}>
       <div className="title-wallpaper"></div>
       <h1>{props.section}</h1>
     </div>
@@ -19,7 +19,7 @@ const Servicios = (props) => {
       </div>}
 
       {props.componentes.map((i) => {
-        return <Components key={i.title} props={i} />;
+        return <Components key={i.title} props={i}/>;
       })}
     </>
   );

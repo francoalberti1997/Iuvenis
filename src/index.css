@@ -358,15 +358,19 @@ nav{
 .main-text{
   box-sizing: border-box;
   width: 50%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+
 }
 
 .main-image{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: start; */
   height: 100%;
+  margin-top: 25px;
   box-sizing: border-box;
-  margin-right: 20px;
   overflow: hidden;
   /* order: 1; */
 }
@@ -384,7 +388,7 @@ nav{
 .main-text{
   /* background-color: var(--marron); */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   /* order: 2; */
@@ -392,19 +396,17 @@ nav{
 
 
 .main-text-p{
-  height: 80%;
+  height: auto;
   width: 95%;
   background-color: var(--blanco);
   border-radius: 25px;
-  margin: 10px;
-  margin-top: 25px;
   text-align: center;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: start;
   align-items: center;
   box-sizing: border-box;
-  margin-top: 25px;
 }
 
 #texto_p{
@@ -417,6 +419,7 @@ nav{
 }
 
 
+
 .main-text-p h2{
   color: var(--verde);
   font-size: 55px;
@@ -427,12 +430,12 @@ nav{
 
 .main-text-p p{
   color: var(--negro);
-  font-size: 23px;
+  font-size: 25px;
   height: auto;
   font-weight: 500;
   font-family: 'Raleway', sans-serif;
-  line-height: 60px;
-  text-align: start;
+  line-height: 80px;
+  text-align: center;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -469,9 +472,9 @@ nav{
 .title-h1 {
   position: relative;
   width: 100%;
-  background-color: var(--negro);
+  background-color: var(--gris_claro);
   display: flex;
-  justify-content: flex-end; /* Cambiado a flex-end */
+  justify-content: center; /* Cambiado a flex-end */
   align-items: center;
   text-align: center;
   height: 165px;
@@ -481,25 +484,19 @@ nav{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("https://png.pngtree.com/background/20230303/original/pngtree-dna-colorful-biology-picture-image_2083460.jpg");
+  background-image: url("https://t3.ftcdn.net/jpg/06/04/71/66/360_F_604716646_aamipj3L1WrlxHBWX2bpv48sc68k2uPw.jpg");
   background-size: cover;
-  opacity: 0.2; /* Ajusta la opacidad según tus preferencias */
+  opacity: 0.5; /* Ajusta la opacidad según tus preferencias */
+  display: flex;
+  justify-content: center;
 }
 
-/* .title-h1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-} */
 
 .title-h1 h1 {
   position: relative; /* Agregado */
   font-size: 49px;
-  margin-right: 80px;
   color: var(--blanco);
+  text-align: center;
   font-family: 'Raleway', sans-serif;
   z-index: 1; /* Asegura que el h1 esté por encima del fondo negro */
 }
@@ -787,16 +784,35 @@ nav{
 }
 
 #mision img{
-  max-width: 350px;
-  max-height: 350px; 
+  max-width: 400px;
+  max-height: 400px; 
 }
+
+.main-home .criogenia{
+  height: auto;
+}
+
+.main-home .main-text-p{
+  justify-content: space-between !important;
+  height: 80%;
+
+}
+
+#mision .main-image{
+  justify-content: center;
+}
+
+.main-home .main-text-button{
+  padding: 15px;
+}
+
 
 /*FOOTER*/
 
 .footer{
   height: 300px;
   width: 100%;
-  background-color: var(--negro);
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -1243,7 +1259,7 @@ nav{
 
 
 
-@media screen and (max-width: 670px){
+@media screen and (max-width:750px){
   .inicio-text-title h2 {
     font-size: 14px;
 }
@@ -1352,16 +1368,14 @@ nav{
 }
 
 
-
+/* 
 @media screen and (max-height:859px){
 
   .main-text-p p{
-    font-size: 20px;
-    line-height: 45px;
-    font-weight: 800;
-
+    font-size: 30px;
+    line-height: 75px;
   }
-}
+} */
 
 
 @media screen and (max-height:835px){
@@ -1380,10 +1394,6 @@ nav{
     top: 270px;
   }
 
-  .main-text-p p{
-    font-size: 18px;
-    line-height: 55px;
-  }
 }
 
 #second-line-burguer{
@@ -1397,10 +1407,7 @@ nav{
     z-index: 100 !important;
   }
 
-  .main-text-p p{
-    font-size: 17px;
-    line-height: 39px;
-  }
+
 
   .nav-section-burguer{
     display: flex;
@@ -1444,13 +1451,11 @@ nav{
     box-sizing: border-box;
   }
 
-  .main-text-p h2{
+  /* .main-text-p h2{
     font-size: 40px;
     margin-bottom: 20px;
   }
-  .main-text-p p{
-    line-height: 32px;
-  }
+  */
   .main-text-button{
     margin-top: 20px; 
 }
@@ -1459,14 +1464,8 @@ nav{
 
 @media screen and (max-height:479px){
 
-.main-text-p h2{
-  /* font-size: 30px; */
-  margin-top: 60px;
-}
 
-.main-text-p p{
-  line-height: 28px;
-}
+
 .criogenia{
   height: auto !important;
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Components = ({props}) => {
   return (
-    <div className={`servicios ${props.link_class}`} id={props.link_a}>
+    <div className={`servicios ${props.link_class} ${props.main}`} id={props.link_a}>
     
     <div className='criogenia' id={props.id_css}>
         
