@@ -5,10 +5,11 @@ const Servicios = (props) => {
   return (
     <>
     {
-      !props.render &&  <div className={`title-components title-h1` } id={props.section}>
-      <div className="title-wallpaper"></div>
-      <h1>{props.section}</h1>
-    </div>
+      !props.render &&  
+      <div className={`title-components title-h1` } id={props.section}>
+        <div className="title-wallpaper"></div>
+        <h1>{props.section}</h1>
+      </div>
     }
      
 

@@ -366,8 +366,8 @@ nav{
 
 .main-image{
   display: flex;
-  /* justify-content: center;
-  align-items: start; */
+  justify-content: center;
+  align-items: start; 
   height: 100%;
   margin-top: 25px;
   box-sizing: border-box;
@@ -391,6 +391,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  width: 90%;
   /* order: 2; */
 }
 
@@ -435,7 +436,7 @@ nav{
   font-weight: 500;
   font-family: 'Raleway', sans-serif;
   line-height: 80px;
-  text-align: center;
+  text-align: start;
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -466,8 +467,12 @@ nav{
   color: var(--blanco);
 }
 
-.criogenia_special_section{
+.criogenia_special_section .criogenia{
+  display: flex;
+  flex-direction: column;
   background-color: none;
+  justify-content: center;
+  align-items: center;
 }
 .title-h1 {
   position: relative;
@@ -487,6 +492,7 @@ nav{
   background-image: url("https://t3.ftcdn.net/jpg/06/04/71/66/360_F_604716646_aamipj3L1WrlxHBWX2bpv48sc68k2uPw.jpg");
   background-size: cover;
   opacity: 0.5; /* Ajusta la opacidad según tus preferencias */
+  background-position: left;
   display: flex;
   justify-content: center;
 }
