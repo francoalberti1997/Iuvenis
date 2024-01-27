@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Components = ({props}) => {
+
+
   return (
     <div className={`servicios ${props.link_class} ${props.main}`} id={props.link_a}>
     
@@ -13,7 +15,7 @@ const Components = ({props}) => {
               {props.texto_p}
             </p>
 
-            <div className='main-text-button'>
+            <div className='main-text-button' onClick={() => handleButtonClick(props.link, props.title)}>
             {props.link ? (
               <a href={`/${props.link}/`}>Ver Más Información</a>
             ) : (

@@ -3,13 +3,13 @@ import Navbar from "./components/navbar/Navbar";
 import Inicio from "./components/inicio/Inicio";
 import Servicios from "./components/Servicios/Servicios";
 import Wsp from "./components/wsp/Wsp";
-import franco from "../src/components/team/perfil_franco.jpg"
+import franco from "../src/components/Colaboradores/franco.jpeg"
 
 import daniela from "../src/components/team/Daniela.jpg"
 import felipe from "../src/components/team/Felipe.jpg"
-import samanta from "../src/components/team/Samanta.jpg"
+import samanta from "../src/components/Colaboradores/Samanta.jpeg"
 import seba from "../src/components/team/Seba.jpg"
-import dani from "../src/components/team/dani.jpg"
+import dani from "../src/components/Colaboradores/Daniel.jpeg"
 
 import logo_blanco from "../src/components/inicio/logo_nuevo.jpg"
 import logo_verde from "../src/components/inicio/logo_nuevo_fondo_verde.jpg"
