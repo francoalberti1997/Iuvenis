@@ -348,7 +348,7 @@ const Lifeextension = () => (
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                "1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación. Con nosotros, tienes la garantía de vida, ahora y en el futuro. ¿Estás listo para transformar tu existencia? <br> <b> En etapa de investigación</b>",
+                "1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación. Con nosotros, tienes la garantía de vida, ahora y en el futuro. ¿Estás listo para transformar tu existencia? Estamos en etapa de investigación, explorando nuevas fronteras para mejorar aún más nuestras garantías y servicios.",
               }}
             />
           ),
