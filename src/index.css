@@ -418,7 +418,7 @@ nav{
 #texto_p .main-text-button{
   display: none;
 }
-
+  
 
 
 .main-text-p h2{
@@ -541,10 +541,15 @@ nav{
   padding: 50px;
 }
 
-#General{
+/* #General{
   margin-top: 150px;
 
+} */
+
+.imagen-presentacion{
+  margin-top: 10px;
 }
+
 
 .team .title{
     font-size: 50px;
@@ -697,7 +702,8 @@ nav{
  display: flex;
  justify-content: center;
  align-items: center;
-  text-align: center;
+text-align: center;
+  padding: 0;
 }
 
 .texto-colaborador{
@@ -787,6 +793,10 @@ nav{
 
 #mision .main-text-p{
   background-color: var(--blanco);
+}
+
+#mision .main-text{
+  width: 50%;
 }
 
 #mision img{
@@ -1269,6 +1279,11 @@ nav{
   .inicio-text-title h2 {
     font-size: 14px;
 }
+
+#mision .main-text{
+  width: 90%;
+}
+
 
 .main-text{
   display: flex;

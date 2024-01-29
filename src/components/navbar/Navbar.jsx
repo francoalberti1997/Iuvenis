@@ -47,8 +47,8 @@ const Navbar = () => {
             <div className="nav-section"><p><Link to="/">Inicio</Link></p></div>
             <div className="nav-section"><p><a href='/#Servicios'>Servicios</a></p></div>
             <div className="nav-section"><p><a href='/#Investigación'>Investigación</a></p></div>
-            <div className="nav-section"><p><a href="/#General">Nosotros</a></p></div>
-            <div className="nav-section"><p><a href="#Mision">Misión</a></p></div>
+            <div className="nav-section"><p><a href="/#Team">Nosotros</a></p></div>
+            <div className="nav-section"><p><a href="/#Mision">Misión</a></p></div>
         </div>
         
         <div id="second-line-burguer" className={clicked ? 'active' : ''}>  
@@ -60,7 +60,7 @@ const Navbar = () => {
             <div className="nav-section" onClick={toggleMenu}><p><Link to="/">Inicio</Link></p></div>
             <div className="nav-section" onClick={toggleMenu}><p><a href='/#Servicios'>Servicios</a></p></div>
             <div className="nav-section" onClick={toggleMenu}><p><a href='/#Investigación'>Investigación</a></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href="/#General">Nosotros</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="/#Team">Nosotros</a></p></div>
             <div className="nav-section" onClick={toggleMenu}><p><a href="/#Mision">Mision</a></p></div>
             </div>
         </div>

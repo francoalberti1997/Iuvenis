@@ -4,12 +4,14 @@ import Inicio from "./components/inicio/Inicio";
 import Servicios from "./components/Servicios/Servicios";
 import Wsp from "./components/wsp/Wsp";
 import franco from "../src/components/Colaboradores/franco.jpeg"
+import nahuel from "../src/components/Colaboradores/nahuel.jpeg"
 
-import daniela from "../src/components/team/Daniela.jpg"
-import felipe from "../src/components/team/Felipe.jpg"
+
+import daniela from "../src/components/team/Daniela.jpeg"
+import felipe from "../src/components/team/Felipe.png"
 import samanta from "../src/components/Colaboradores/Samanta.jpeg"
 import seba from "../src/components/team/Seba.jpg"
-import dani from "../src/components/Colaboradores/Daniel.jpeg"
+import dani from "../src/components/Colaboradores/Daniel.png"
 
 import logo_blanco from "../src/components/inicio/logo_nuevo.jpg"
 import logo_verde from "../src/components/inicio/logo_nuevo_fondo_verde.jpg"
@@ -43,7 +45,7 @@ const ServiciosPage = () => (
           main:"main-home",
           section: "Servicios",
           texto_p:
-            "1mPossible innova en criogenia, abordando desafíos para la preservación corporal. No solo proveemos servicios, sino que somos aliados comprometidos en hallar soluciones, mejorando la tecnología criogénica y explorando avances en antiaging. Nos comprometemos a persistir en la búsqueda de respuestas.",
+            "1mPossible innova en criogenia, abordando desafíos para la preservación corporal. No solo proveemos servicios, sino que somos aliados comprometidos en hallar soluciones, mejorando la tecnología criogénica y explorando avances en anti-aging. Nos comprometemos a persistir en la búsqueda de respuestas.",
           imagen:
             "https://www.thoughtco.com/thmb/gpXe4f-4MQeNFrH4CMuWPya2aTw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/egg-storage-for-ivf-478187231-59491b7c3df78c537bc0b778.jpg",
         },
@@ -62,7 +64,7 @@ const ServiciosPage = () => (
             "https://wacenter.org/wp-content/uploads/2023/03/anti-aging.jpg",
         },
         {
-          title: "Antiaging",
+          title: "Anti-aging",
           main:"main-home",
 
           texto_p:
@@ -71,7 +73,7 @@ const ServiciosPage = () => (
             "https://hips.hearstapps.com/hmg-prod/images/portrait-of-man-holding-younger-photo-of-himself-royalty-free-image-1685552323.jpg",
         },
         {
-          title: "Life extension",
+          title: "Life-extension",
           main:"main-home",
 
           texto_p:
@@ -83,7 +85,7 @@ const ServiciosPage = () => (
     />
     <Team
           staff={"CEO"}
-          rol={"General"}
+          rol={"Team"}
           icons={"fa-solid fa-user-tie"}
         componentes={[
           {
@@ -142,6 +144,13 @@ const ServiciosPage = () => (
             "nombre": "Daniel Lavagna",
             "profesion": "Diseñador Gráfico",
             "texto": "Daniel Lavagna es un talentoso Diseñador Gráfico, fotógrafo y editor de videos. Además, docente en un centro de formación profesional."
+          },
+          {
+            "usuario": nahuel,
+            "rol": "Colaborador",
+            "nombre": "Nahuel Turco",
+            "profesion": "Estudiante de biología molecular",
+            "texto": "Destacado alumno de biología molecular, ostenta el mejor promedio de su carrera y se encuentra en un avanzado estadio de sus estudios."
           }
           
         ]}
@@ -293,7 +302,7 @@ La crioprotección, mediante compuestos como el glicerol, reduce o elimina la fo
           section: "Servicios",
           texto_p:
           `
-          Nuestras investigaciones marcan un camino a seguir en cuanto a la preservación del paciente en las mejores condiciones posibles. Nuestra propuesta técnica es superior, anticipando resultados mejorados en la criopreservación. Nuestra propuesta técnica es superior, anticipando resultados mejorados en la criopreservación y buscando optimizar la eficacia del proceso para prolongar la preservación de manera más efectiva.
+          Nuestras investigaciones marcan un camino a seguir en cuanto a la preservación del paciente en las mejores condiciones posibles, anticipando resultados mejorados en la criopreservación y buscando optimizar la eficacia del proceso para prolongar la preservación de manera más efectiva.
 
 
           `,
@@ -343,12 +352,12 @@ const Lifeextension = () => (
     <Servicios
        componentes={[
         {
-          title: "Lifeextension",
+          title: "Life-extension",
           texto_p: (
             <div
               dangerouslySetInnerHTML={{
                 __html:
-                "1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su optimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación. Con nosotros, tienes la garantía de vida, ahora y en el futuro. ¿Estás listo para transformar tu existencia? Estamos en etapa de investigación, explorando nuevas fronteras para mejorar aún más nuestras garantías y servicios.",
+                "1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su óptimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación. Con nosotros, tienes la garantía de vida, ahora y en el futuro. ¿Estás listo para transformar tu existencia? Estamos en etapa de investigación, explorando nuevas fronteras para mejorar aún más nuestras garantías y servicios.",
               }}
             />
           ),
@@ -369,7 +378,7 @@ const Aging = () => (
     <Servicios
        componentes={[
         {
-          title: "Antiaging",
+          title: "Anti-aging",
           texto_p: (
             <div
               dangerouslySetInnerHTML={{
@@ -426,7 +435,13 @@ function App() {
       link: "ubicacion",
       subtitulo:"Total seguridad, nuestro compromiso",
       texto_p:
-      `En 1mPossible, la seguridad es más que un lema; es el pilar fundamental que respalda cada aspecto de nuestro proyecto. Iniciamos nuestras investigaciones en Buenos Aires, Argentina, y estamos orgullosos de anunciar la apertura planificada para enero del 2026 de nuestro centro operativo de criogenia en Zug, con oficinas centrales en Zúrich, Suiza. La elección de esta ubicación no es casual; es estratégica y respaldada por un compromiso inquebrantable con la seguridad integral. Aunque aspiramos a prolongar la vida indefinidamente, reconocemos que no hay tratamiento que pueda prevenir catástrofes naturales. Es por ello que hemos seleccionado Suiza como nuestro país principal de expansión en operaciones de criogenia.`,
+
+      `
+      
+      En 1mPossible, la seguridad no es solo un lema, sino el pilar fundamental que respalda cada aspecto de nuestro proyecto. Iniciamos nuestras investigaciones en Buenos Aires, Argentina y nos enorgullece anunciar la apertura planificada, para enero de 2026, de nuestro centro operativo de criogenia en Zug, con oficinas centrales en Zúrich, Suiza.
+      
+      `,
+
       imagen: ubicacion,
     }
   ]
@@ -439,19 +454,22 @@ function App() {
       profesion: 'Doctora en Ciencias Informáticas',
       link:{link_1:'https://r9.ieee.org/argentina-cis/inicio/autoridades/daniela-lopez-de-luise/ '},
       texto: `
+  
       La docente, investigadora y directora del Artificial Intelligence Group (AIGroup) de la Facultad de Ingeniería de la Universidad de Palermo (UP), Daniela López De Luise, fue designada en el 2013 presidente de Institute of Electrical and Electronics Engineers (IEEE Argentina), por votación casi unánime e histórica por la cantidad de votantes.
 
-      Esta asociación profesional es la más grande del mundo y está dedicada al avance tecnológico y la innovación. Cuenta con más de 400 mil miembros en más de 160 países. El nombramiento con el que ha sido distinguida la Dra. López De Luise, quien hace 28 años es miembro del IEEE, es un altísimo honor que muy pocos en la Argentina han recibido, debido a las altas exigencias del Instituto respecto a los candidatos.
-      
-      Daniela es Doctora en Ciencias Informáticas por la Universidad Nacional de La Plata, e Ingeniera en Informática, entre sus otros títulos. Es actualmente la directora del laboratorio de investigaciones «Computational Intelligence And Information Systems Labs (CI2S  LAB), asociación sin fines de lucro, dedicada al apalancamiento de la inteligencia artificial como investigación aplicada.
-      
-      Revista actualmente como Directora de la Especialización de Ensenanza de Ciencias de la Computación, UADER (Entre Ríos), y es profesora de Posgrado en tres instituciones: en la Universidad Austral, en la disciplina de aprendizaje automático, en la Universidad Abierta Interamericana UAI y en la Universidad Señor del Sipán (Perú).
-      
-      Presenta una extensa trayectoria como oradora en diversos eventos nacionales e internacionales, y ha publicado un centenar de trabajos relacionados con la disciplina de IA, creando conceptos como los wavelets morfosintácticos, aportando al estudio de la conciencia de robots y proponiendo nuevos mecanismos de propagación en el campo de los autómatas, como el caso del modelo de conciencia bacteriana.
-      
-      Es miembro del programa local de disertantes distinguidos de la IEEE Argentina. Fue Presidente del comité directivo de la IEEE Argentina en el período 2013-2014. Fundó y dirigió el laboratorio de investigaciones AI Group en la Universidad de Palermo. Es fundadora del Capítulo Argentino de la IEEE Computational Intelligence Society, y fue su primera Presidente (2005). También ha creado la red científica PI Network en 2008, dirigiendo la misma hasta 2013. En su paso por el ITBA creó y dirigió el primer laboratorio de Bases de datos del ITBA, Instituto Tecnológico de Buenos Aires, hacia 1998, entre otras actividades.
-      
-      En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la IEEE Capitulo Argentina, y sus múltiples proyectos de investigación, desarrollo e innovación en torno a la inteligencia computacional. El último de ellos (2019) es versante sobre una novel arquitectura de islas de investigación, desarrollo e innovación, a radicarse en el Museo Histórico Sarmiento, en sociedad con la SCA (Sociedad Científica Argentina), con miras a lograr un lugar colaborativo para investigadores, empresas, organizaciones intermedias y docentes que deseen colaborar en la problemática de la enseñanza STEAM (ciencia, tecnología, ingeniería, arte y matemáticas).
+Esta asociación profesional es la más grande del mundo y está dedicada al avance tecnológico y la innovación. Cuenta con más de 400 mil miembros en más de 160 países. El nombramiento con el que ha sido distinguida la Dra. López De Luise, quien hace 28 años es miembro del IEEE, es un altísimo honor que muy pocos en la Argentina han recibido, debido a las altas exigencias del Instituto respecto a los candidatos.
+
+Daniela es Doctora en Ciencias Informáticas por la Universidad Nacional de La Plata, e Ingeniera en Informática, entre sus otros títulos. Es actualmente la directora del laboratorio de investigaciones «Computational Intelligence And Information Systems Labs (CI2S  LAB), asociación sin fines de lucro, dedicada al apalancamiento de la inteligencia artificial como investigación aplicada.
+
+Revista actualmente como Directora de la Especialización de Ensenanza de Ciencias de la Computación, UADER (Entre Ríos), y es profesora de Posgrado en tres instituciones: en la Universidad Austral, en la disciplina de aprendizaje automático, en la Universidad Abierta Interamericana UAI y en la Universidad Señor del Sipán (Perú).
+
+Presenta una extensa trayectoria como oradora en diversos eventos nacionales e internacionales, y ha publicado un centenar de trabajos relacionados con la disciplina de IA, creando conceptos como los wavelets morfosintácticos, aportando al estudio de la conciencia de robots y proponiendo nuevos mecanismos de propagación en el campo de los autómatas, como el caso del modelo de conciencia bacteriana.
+
+Es miembro del programa local de disertantes distinguidos de la IEEE Argentina. Fue Presidente del comité directivo de la IEEE Argentina en el período 2013-2014. Fundó y dirigió el laboratorio de investigaciones AI Group en la Universidad de Palermo. Es fundadora del Capítulo Argentino de la IEEE Computational Intelligence Society, y fue su primera Presidente (2005). También ha creado la red científica PI Network en 2008, dirigiendo la misma hasta 2013. En su paso por el ITBA creó y dirigió el primer laboratorio de Bases de datos del ITBA, Instituto Tecnológico de Buenos Aires, hacia 1998, entre otras actividades.
+
+En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la IEEE Capitulo Argentina, y sus múltiples proyectos de investigación, desarrollo e innovación en torno a la inteligencia computacional. El último de ellos (2019) es versante sobre una novel arquitectura de islas de investigación, desarrollo e innovación, a radicarse en el Museo Histórico Sarmiento, en sociedad con la SCA (Sociedad Científica Argentina), con miras a lograr un lugar colaborativo para investigadores, empresas, organizaciones intermedias y docentes que deseen colaborar en la problemática de la enseñanza STEAM (ciencia, tecnología, ingeniería, arte y matemáticas).
+
+
       
       `,
     },
@@ -525,7 +543,23 @@ Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el 
       texto: `
       Daniel Lavagna es un talentoso Diseñador Gráfico, fotógrafo y editor de videos. Su enfoque versátil le permite abordar diversos aspectos del diseño visual, desde la creación de identidades visuales hasta la producción de contenido multimedia atractivo. No solo es diseñador sino que también docente en un centro de formación profesional.
       `,
+    },
+    {
+      usuario: nahuel,
+      rol: 'Técnico',
+      nombre: 'Nahuel Turco',
+      link: "",
+      profesion: 'Estudiante de Biología molecular.',
+      texto: `
+      Nahuel Turco, destacado alumno de biología molecular, ostenta el mejor promedio de su carrera y se encuentra en un avanzado estadio de sus estudios. Su aguda inteligencia y capacidad para resolver problemas lo distinguen como una persona excepcional en su campo.
+En el mundo académico, Nahuel es reconocido por su visión única. Él enfatiza que, en un mundo cada vez más complejo y fascinante, la biología emerge como una disciplina esencial para comprender y modificar la vida. Su compromiso radica en utilizar sus habilidades en biología para acercar el conocimiento científico a la sociedad en su totalidad. Su visión se cimenta en la convicción de que todos, independientemente de su origen socioeconómico, deberían tener la oportunidad de beneficiarse de los resultados de la investigación científica y el progreso de la ciencia. Nahuel aboga por la importancia de construir puentes entre la comunidad científica y el público en general, promoviendo la divulgación accesible y proporcionando recursos que permitan a las personas explorar y comprender los avances en biología.
+En 1mPossible, nuestro enfoque es inherentemente interdisciplinario, guiado por un compromiso inquebrantable con la obtención de resultados tangibles. Valoramos la capacidad de jóvenes y genios talentosos que poseen la destreza para resolver los problemas del mañana, trascendiendo más allá del reconocimiento meramente académico. Nahuel Turco, con su destacado desempeño y aguda inteligencia en biología, encarna a la perfección nuestra filosofía. Su visión de acercar el conocimiento científico a la sociedad y crear puentes entre la comunidad científica y el público en general se alinea perfectamente con nuestro compromiso de abordar desafíos complejos de manera innovadora y práctica. En 1mPossible, reconocemos y celebramos el talento visionario que va más allá de los límites convencionales, y Nahuel es un claro ejemplo de este enfoque transformador.
+
+      `,
     }
+
+
+    
     
     // You can add more objects with data here as needed
   ];
@@ -537,8 +571,8 @@ Samanta Reyes posee conocimiento, pasión y un compromiso inquebrantable con el 
         <Route path="*" element={<ServiciosPage />} />
         <Route path="/Criogenia" element={<Criogenia />} />
         <Route path="/Rejuvenation" element={<Rejuvenating />} />
-        <Route path="/Life extension" element={<Lifeextension />} />
-        <Route path="/Antiaging" element={<Aging />} />
+        <Route path="/Life-extension" element={<Lifeextension />} />
+        <Route path="/Anti-aging" element={<Aging />} />
         
         {colaboradorData.map((i)=>(
           <Route path={`/Colaborador/${i.nombre}/`} element={<ColaboradorPage nombre={i.nombre} imagen={i.usuario} titulo={i.profesion} texto={i.texto} link={i.link}/>}/>    

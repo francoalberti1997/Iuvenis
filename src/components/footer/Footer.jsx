@@ -6,7 +6,7 @@ const Footer = () => {
     <div className='footer'>
         <p>©2024 1mPossible | All Rights Reserved</p>
         <img src={logo} alt="" height={"150px"} width={"150px"}/>
-        <p className='diseño-footer'><a href="https://francoalberti1997.vercel.app/">Diseñado por Alberti Code</a></p>
+        <p className='diseño-footer'><a href="https://francoalberti1997.vercel.app/">Designed by Alberti Code</a></p>
     </div>
   )
 }
