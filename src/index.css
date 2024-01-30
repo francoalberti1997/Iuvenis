@@ -1284,6 +1284,9 @@ text-align: center;
   width: 90%;
 }
 
+#Team{
+  margin-top: 50px;
+}
 
 .main-text{
   display: flex;
