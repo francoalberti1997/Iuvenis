@@ -162,11 +162,17 @@ nav{
 }
 .text-languaje, .icon-language{
   font-size: 20px;
+  cursor: pointer;
 }
 
 .text-languaje{
   font-size: 20px;
   margin: 3px;
+}
+
+.text-languaje img{
+  height: 20px;
+  width: 30px;
 }
 
 .icon-language{
@@ -1271,8 +1277,6 @@ text-align: center;
 
   
 }
-
-
 
 
 @media screen and (max-width:750px){

@@ -3,14 +3,13 @@ import React from 'react'
 import logo_square from "../inicio/logo_nuevo_fondo.jpg"
 import portada from '../inicio/portada.jpg'
 
-const Inicio = () => {
+const Inicio = ({toggleLanguage, clickLanguage}) => {
   return (
         <div className='inicio' id=''>
             
             <div className="inicio-wrapper-image">
                 <img src={portada} alt="" />
             </div>
-
             <div className="inicio-text">
             
                 <div className="inicio-text-image">
@@ -18,13 +17,16 @@ const Inicio = () => {
                 </div>
                 <div className="inicio-text-title">
                     <h2>
-                    "Explorando la Inmortalidad: Ciencia Vanguardista en <b>1mPossible</b>."</h2>
+                    
+                        {clickLanguage ? `Explorando la Inmortalidad: Ciencia Vanguardista en 1mPossible.` : `Exploring Immortality: Cutting-Edge Science at 1mPossible`}
+                    
+                    </h2>
                 </div>
             </div>
-
             <div className="inicio-text-title mobile-text">
             <h2>
-                    "Explorando la Inmortalidad: Ciencia Vanguardista en <b>1mPossible</b>."</h2>
+            {clickLanguage ? `Explorando la Inmortalidad: Ciencia Vanguardista en 1mPossible.` : `Exploring Immortality: Cutting-Edge Science at 1mPossible`}        
+            </h2>
             </div>
 
             {/* <div className="mobile-img">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Components = ({props}) => {
+const Components = ({props, idioma}) => {
 
 
   return (
@@ -10,16 +10,16 @@ const Components = ({props}) => {
         
         <div className="main-text" >
           <div className="main-text-p">
-            <h2>{props.title}</h2>
+            <h2>{idioma ? props.title: props.title_eng}</h2>
             <p>
-              {props.texto_p}
+              {idioma ? props.texto_p : props.texto_p_eng }
             </p>
 
             <div className='main-text-button' onClick={() => handleButtonClick(props.link, props.title)}>
             {props.link ? (
-              <a href={`/${props.link}/`}>Ver Más Información</a>
+              <a href={`/${props.link}/`}>{idioma ? `Ver Más Información` : `View More`}</a>
             ) : (
-              <a href={`/${props.title}`}>Ver Más Información</a>
+              <a href={`/${props.title}`}>{idioma ? `Ver Más Información` : `View More`}</a>
             )}
 
             </div>

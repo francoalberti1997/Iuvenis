@@ -9,7 +9,7 @@ const Colaboradores = (props) => {
             {props.nombre}
           </h2>
           <h3>
-            {props.titulo}
+            {props.clickLanguage ? props.titulo : props.titulo_eng}
           </h3>
         </div>
 
@@ -28,7 +28,7 @@ const Colaboradores = (props) => {
 
       <div className="texto-colaborador">
         <p>
-          {props.texto}
+          {props.clickLanguage ? props.texto : props.texto_eng}
         </p>
       </div>
     </div>

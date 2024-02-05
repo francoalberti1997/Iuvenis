@@ -6,12 +6,12 @@ const Team = (props) => {
   return (
     <div className='team' id={props.rol}>
 
-        <div className="title">{props.staff} <i class={props.icons}></i></div>
+        <div className="title">{props.clickLanguage ? props.staff : props.staff_eng} <i class={props.icons}></i></div>
 
         <div className="card_container">
 
         {props.componentes.map((i) => (
-            <Card usuario={i.usuario} rol={i.rol} nombre={i.nombre} profesion={i.profesion} texto={i.texto}/>
+            <Card usuario={i.usuario} rol={props.clickLanguage ? i.rol : i.role} nombre={i.nombre} profesion={props.clickLanguage ? i.profesion : i.job} texto={props.clickLanguage ? i.texto : i.texto_eng}/>
         ))}
         
         </div>

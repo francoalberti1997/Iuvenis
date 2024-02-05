@@ -3,7 +3,7 @@ import logo from "../navbar/1mPossible.png"
 import logo_new from "../inicio/logo_nuevo.jpg"
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({toggleLanguage, clickLanguage}) => {
 
     const [clicked, setClicked] = useState(false);
 
@@ -11,12 +11,13 @@ const Navbar = () => {
         setClicked(!clicked);
         document.documentElement.classList.toggle('menu-active', clicked);
     };
+    
   return (
     <nav>
         <div className="first-line">
             <div className="container-nav logo">
                 <div className="logo-imagen"><img src={logo} alt="" /></div>
-                <p>Leading research</p>
+                {clickLanguage ? <p>Investigación líder</p> : <p>Leading research</p>}
             </div>
             <div className="container-nav info">
                 <div className="info-contacto">
@@ -35,20 +36,20 @@ const Navbar = () => {
                         </div>
                     </div>
 
-                    <div className="select_lg">
-                        <div className="text-languaje">ENG</div>
-                        <div className="icon-language"><i class="fa fa-solid fa-chevron-down"></i></div>
+                    <div className="select_lg" >
+                        { clickLanguage ? <div className="text-languaje" onClick={toggleLanguage}><img src="https://cdn.britannica.com/36/4336-050-056AC114/Flag-Spain.jpg" alt="" /></div> : <div className="text-languaje" onClick={toggleLanguage}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" alt="" /></div> }
+                        <div className="icon-language" onClick={toggleLanguage}><i class="fa fa-solid fa-chevron-down"></i></div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div id="second-line">
-            <div className="nav-section"><p><Link to="/">Inicio</Link></p></div>
-            <div className="nav-section"><p><a href='/#Servicios'>Servicios</a></p></div>
-            <div className="nav-section"><p><a href='/#Investigación'>Investigación</a></p></div>
-            <div className="nav-section"><p><a href="/#Team">Nosotros</a></p></div>
-            <div className="nav-section"><p><a href="/#Mision">Misión</a></p></div>
+            <div className="nav-section"><p><Link to="/">{clickLanguage ? `Home` : `Home`}</Link></p></div>
+            <div className="nav-section"><p><a href='/#Servicios'>{clickLanguage ? `Servicios` : `Services`}</a></p></div>
+            <div className="nav-section"><p><a href='/#Investigación'>{clickLanguage ? `Investigación` : `Research`}</a></p></div>
+            <div className="nav-section"><p><a href="/#Team">{clickLanguage ? `Nosotros` : `About Us`}</a></p></div>
+            <div className="nav-section"><p><a href="/#Mision">{clickLanguage ? `Mision` : `Mission`}    </a></p></div>
         </div>
         
         <div id="second-line-burguer" className={clicked ? 'active' : ''}>  
