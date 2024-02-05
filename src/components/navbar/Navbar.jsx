@@ -58,11 +58,11 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
             </div>
                 
             <div className='nav-section-burguer'>
-            <div className="nav-section" onClick={toggleMenu}><p><Link to="/">Inicio</Link></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Servicios'>Servicios</a></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Investigación'>Investigación</a></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href="/#Team">Nosotros</a></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href="/#Mision">Mision</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><Link to="/">{clickLanguage ? `Home` : `Home`}</Link></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Servicios'>{clickLanguage ? `Servicios` : `Services`}</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Investigación'>{clickLanguage ? `Investigación` : `Research`}</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="/#Team">{clickLanguage ? `Nosotros` : `About Us`}</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="/#Mision">{clickLanguage ? `Mision` : `Mission`}</a></p></div>
             </div>
         </div>
         
