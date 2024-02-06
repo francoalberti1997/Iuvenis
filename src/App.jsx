@@ -12,6 +12,8 @@ import samanta from "../src/components/Colaboradores/Samanta.jpeg"
 import seba from "../src/components/team/Seba.jpg"
 import dani from "../src/components/Colaboradores/Daniel.png"
 
+import nahuel from "../src/components/team/Nahuel.png"
+
 import logo_blanco from "../src/components/inicio/logo_nuevo.jpg"
 import logo_verde from "../src/components/inicio/logo_nuevo_fondo_verde.jpg"
 
@@ -137,15 +139,17 @@ const ServiciosPage = ({clickLanguage, toggleLanguage}) => {
             "texto": "Doctora en Ciencias Informáticas, lidera el CI2S LAB en inteligencia artificial. Su proyecto actual en el Museo Histórico Sarmiento busca fomentar la enseñanza STEAM."
           },
           {
-            "usuario": felipe,
+            "usuario": nahuel,
             "rol": "Científico",
             "role": "Scientist",
 
-            "nombre": "Felipe Bruno Dias de Oliveira",
-            "profesion": "Doctor en Ciencias de la Salud",
-            "job":"Ph.D. in Health Sciences",
-            "texto": "Doctor en Ciencias de la Salud, formado en Albert Einstein y reconocido por Oxford, investiga en la Universidad de Buenos Aires, destacándose en mecanobiología.",
-            "texto_eng": "A Ph.D. in Health Sciences, trained at Albert Einstein and recognized by Oxford, currently affiliated with the University of Buenos Aires, specializing in mechanobiology."
+            "nombre": "Nahuel Turco",
+            "profesion": "Estudiante de Biología Molecular",
+            "job":"Molecular Biology Student",
+            "texto": "Un estudiante destacado en biología molecular, Nahuel Turco, tiene el promedio más alto en su campo de estudio y se encuentra en una etapa avanzada de su trayectoria académica.",
+            "texto_eng": `
+            An outstanding student in molecular biology, Nahuel Turco holds the highest GPA in his field of study and is in an advanced stage of his academic journey.
+            `
           },
           {
             "usuario": samanta,
@@ -572,27 +576,23 @@ En la actualidad, divide su tiempo entre su rol de investigadora, su rol en la I
       `
     },
     {
-      usuario: felipe,
+      usuario: nahuel,
       rol: 'Científico',
-      nombre: 'Felipe Bruno Dias de Oliveira',
-      profesion: 'Doctor en Ciencias de la Salud',
-      job:"Ph.D. in Health Sciences",
+      nombre: 'Nahuel Turco',
+      profesion: 'Estudiante de Biología Molecular',
+      job:"Molecular Biology Student",
       texto_eng:`
-      Felipe Bruno Dias de Oliveira holds a Ph.D. in Health Sciences (Aging) (2020), with honors, from the Facultad Israelita de Ciencias de la Salud Albert Einstein - Instituto Israelita de Enseñanza e Investigación Albert Einstein. He was recognized as an "Outstanding Student" by the University of Oxford - Kennedy Institute of Rheumatology (2019-2020). He began his academic journey with a Master's in Human Development and Technologies (Technologies and Human Performance) (2013) and earned his Bachelor's degree in Physical Education (2010) at the Universidade Estadual Paulista Júlio de Mesquita Filho - Instituto de Biociências.
+    
+      Nahuel Turco, an outstanding student in molecular biology, boasts the highest GPA in his field of study and is in an advanced stage of his academic journey. His sharp intelligence and problem-solving ability distinguish him as an exceptional individual in his field. In the academic world, Nahuel is recognized for his unique vision. He emphasizes that, in an increasingly complex and fascinating world, biology emerges as an essential discipline for understanding and modifying life. His commitment lies in using his skills in biology to bring scientific knowledge to society as a whole. His vision is rooted in the conviction that everyone, regardless of their socioeconomic background, should have the opportunity to benefit from the results of scientific research and the progress of science. Nahuel advocates for the importance of building bridges between the scientific community and the general public, promoting accessible outreach and providing resources that enable people to explore and understand advances in biology.
 
-Currently dedicated to the study of medicine at the University of Buenos Aires - Facultad de Medicina, his academic interests include mechanobiology, articular cartilage, osteoarthritis pathophysiology, cellular therapy, and conservative treatment through physical exercise. His academic trajectory and contributions in the field of health, especially in the area of aging, underscore his commitment to research and academic excellence.
+At 1mPossible, our approach is inherently interdisciplinary, guided by an unwavering commitment to achieving tangible results. We value the ability of young and talented geniuses who have the skill to solve the problems of tomorrow, transcending beyond mere academic recognition. Nahuel Turco, with his outstanding performance and sharp intelligence in biology, perfectly embodies our philosophy. His vision of bringing scientific knowledge to society and bridging the gap between the scientific community and the general public aligns perfectly with our commitment to addressing complex challenges in innovative and practical ways. At 1mPossible, we recognize and celebrate visionary talent that goes beyond conventional limits, and Nahuel is a clear example of this transformative approach.
 
 
-      
       `,
       texto: `
-      
-Felipe Bruno Dias de Oliveira es Doctor en Ciencias de la Salud (Envejecimiento) (2020), con distinción honorífica, egresado de la Facultad Israelita de Ciencias de la Salud Albert Einstein - Instituto Israelita de Enseñanza e Investigación Albert Einstein y reconocido como "Estudiante Destacado" por la Universidad de Oxford - Instituto Kennedy de Reumatología (2019-2020). Inició su formación académica con una Maestría en Desarrollo Humano y Tecnologías (Tecnologías y Rendimiento Humano) (2013) y obtuvo su Licenciatura en Educación Física (2010) en la Universidad Estatal Paulista Júlio de Mesquita Filho - Instituto de Biociencias.
+      Nahuel Turco, un destacado estudiante de biología molecular, ostenta el más alto promedio de calificaciones en su campo de estudio y se encuentra en una etapa avanzada de su trayectoria académica. Su aguda inteligencia y capacidad para resolver problemas lo distinguen como un individuo excepcional en su campo. En el ámbito académico, Nahuel es reconocido por su visión única. Él enfatiza que, en un mundo cada vez más complejo y fascinante, la biología emerge como una disciplina esencial para comprender y modificar la vida. Su compromiso radica en utilizar sus habilidades en biología para llevar el conocimiento científico a la sociedad en su conjunto. Su visión está arraigada en la convicción de que todos, independientemente de su situación socioeconómica, deberían tener la oportunidad de beneficiarse de los resultados de la investigación científica y el progreso de la ciencia. Nahuel aboga por la importancia de construir puentes entre la comunidad científica y el público en general, promoviendo la divulgación accesible y proporcionando recursos que permitan a las personas explorar y comprender los avances en biología.
 
-Actualmente, esta dedicado al estudio de la medicina en la Universidad de Buenos Aires - Facultad de Medicina. Sus intereses académicos incluyen la mecanobiología, cartílago articular, fisiopatología de la osteoartritis, terapia celular y tratamiento conservador con ejercicio físico.
-
-Su trayectoria académica y sus contribuciones en el campo de la salud, especialmente en el área de envejecimiento, respaldan su compromiso con la investigación y la excelencia académica.
-
+      En 1mPossible, nuestro enfoque es inherentemente interdisciplinario, guiado por un compromiso inquebrantable de lograr resultados tangibles. Valoramos la capacidad de jóvenes talentosos y genios que tienen la habilidad para resolver los problemas del mañana, trascendiendo más allá del mero reconocimiento académico. Nahuel Turco, con su destacado desempeño y aguda inteligencia en biología, encarna perfectamente nuestra filosofía. Su visión de llevar el conocimiento científico a la sociedad y cerrar la brecha entre la comunidad científica y el público en general se alinea perfectamente con nuestro compromiso de abordar desafíos complejos de manera innovadora y práctica. En 1mPossible, reconocemos y celebramos el talento visionario que va más allá de los límites convencionales, y Nahuel es un claro ejemplo de este enfoque transformador.
       `,
     },
     {

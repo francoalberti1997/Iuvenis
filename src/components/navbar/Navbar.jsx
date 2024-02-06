@@ -32,7 +32,7 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
                         </div>
                         <div className="info-phone">
                             <p className='mail-info'>inquiries.1mpossible@gmail.com</p>
-                            <a class="number-info whats-app" href="https://wa.me/+5491169732194?text=¡Hola! Me gustaría obtener más información." target="" id="wsp"><p className='number-info'>+5491169732194</p></a>
+                            <a class="number-info whats-app" href={clickLanguage ? `https://wa.me/+5491169732194?text=¡Hola! Me gustaría obtener más información.` : `"https://wa.me/+5491169732194?text=Hi! I would like to know more.`} target="" id="wsp"><p className='number-info'>+5491169732194</p></a>
                         </div>
                     </div>
 
