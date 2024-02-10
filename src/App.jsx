@@ -471,7 +471,7 @@ const Aging = ({clickLanguage, toggleLanguage}) => (
 const ColaboradorPage = (props) => (
   <>
     <Navbar clickLanguage={props.language} toggleLanguage={props.toggleLanguage}/>
-    <Wsp clickLanguage={clickLanguage}/>
+    <Wsp clickLanguage={props.language}/>
     <Colaboradores
       nombre={props.nombre}
       titulo={props.titulo}
