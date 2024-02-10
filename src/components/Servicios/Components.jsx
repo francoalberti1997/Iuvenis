@@ -2,12 +2,11 @@ import React from 'react'
 
 const Components = ({props, idioma}) => {
 
-
+  
   return (
     <div className={`servicios ${props.link_class} ${props.main}`} id={props.link_a}>
     
     <div className='criogenia' id={props.id_css}>
-        
         <div className="main-text" >
           <div className="main-text-p">
             <h2>{idioma ? props.title: props.title_eng}</h2>

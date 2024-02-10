@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./components/navbar/Navbar";
 import Inicio from "./components/inicio/Inicio";
 import Servicios from "./components/Servicios/Servicios";
@@ -33,7 +33,7 @@ import Footer from "./components/footer/Footer";
 
 
 
-const ServiciosPage = ({clickLanguage, toggleLanguage}) => {
+const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
   // const [clickLanguage, setLanguage] = useState(false);
 
   // const toggleLanguage = () => {
@@ -42,13 +42,13 @@ const ServiciosPage = ({clickLanguage, toggleLanguage}) => {
 
   return (
   <>
-    <Navbar toggleLanguage={toggleLanguage} clickLanguage={clickLanguage}/>
+    <Navbar toggleLanguage={toggleLanguage} clickLanguage={clickLanguage} />
     <Wsp />
     <Inicio toggleLanguage={toggleLanguage} clickLanguage={clickLanguage}/>
     <Servicios
       clickLanguage={clickLanguage}
       section={"Servicios"}
-      section_eng={'Services'}
+      section_eng={'Services'}  
       componentes={[
         {
           title: "Criogenia",
@@ -267,7 +267,7 @@ const Criogenia = ({clickLanguage, toggleLanguage}) => (
         },
         {
           title: "Usted no está muerto cuando su corazón deja de latir y deja de respirar",
-          title_eng:"You are not dead when your heart stops beating and you stop breathing.",
+          title_eng:"You are not dead when your heart stops beating and you stop breathing",
           section: "Servicios",
           texto_p:
           `La muerte está actualmente asociada con la pérdida de las funciones cerebrales. En cambio debería definirse como la pérdida irreversible de la vida de manera absoluta y definitiva, cuando la estructura cerebral está destruida. 
@@ -323,7 +323,7 @@ La reducción de temperatura causa hipotermia, deprimiendo la actividad proteasa
 
         {
           title: "La reanimación fue posible usando temperaturas mayores en animales",
-          title_eng:": Reanimation using higher temperatures has been achieved in animals.",
+          title_eng:"Reanimation using higher temperatures has been achieved in animals",
           section: "Servicios",
           texto_p_eng:"Experiments with rats, cats, and dogs have demonstrated successful reanimation rates using cooling techniques and blood substitutes. Rats have even been successfully reanimated multiple times, indicating the viability of the process. Experiments on dogs have shown resistance to ischemia, and the application of hypothermia has yielded positive results without significant neurological deterioration. In humans, hypothermic cardiac arrest has been successfully performed during surgical procedures, supporting the effectiveness of similar approaches.",
           texto_p:
@@ -340,10 +340,10 @@ La reducción de temperatura causa hipotermia, deprimiendo la actividad proteasa
 
         {
           title: "Las mejoras en el ámbito legal",
-          title_eng:"Advancements in the legal realm.",
+          title_eng:"Advancements in the legal realm",
           texto_p_eng:`Due to the unauthorized procedure without the formal presentation of clinical death, there will always be some minimal ischemic damage due to legal terms. This implies that there is always a certain pre-mortem ischemic damage, but the most significant damage occurs post-mortem. Therefore, being able to reduce the time from the declaration of clinical death to the minimum possible will decrease the damage to the patient.
-          The immediate resumption of post-mortem circulation benefits tissues by reducing the amount of free radicals and damage due to reperfusion. The integrity of blood vessels is vital for transporting the cryoprotective vitrification solution to the brain, avoiding the formation of ice. Nanotechnology could, in the future, address any potential damage in the brain.",
-          section: "Servicios`,
+          The immediate resumption of post-mortem circulation benefits tissues by reducing the amount of free radicals and damage due to reperfusion. The integrity of blood vessels is vital for transporting the cryoprotective vitrification solution to the brain, avoiding the formation of ice. Nanotechnology could, in the future, address any potential damage in the brain.`,
+          section: "Servicios",
           texto_p:
           `
           Después de la muerte legal, el paciente se sumerge en un baño de agua helada para acelerar el enfriamiento. 
@@ -360,7 +360,7 @@ La crioprotección, mediante compuestos como el glicerol, reduce o elimina la fo
 
         {
           title: "Nuestra propuesta técnica es superior a la existente",
-          title_eng:"Our technical proposal is superior to the existing one.",
+          title_eng:"Our technical proposal is superior to the existing one",
           texto_p_eng:"Our research paves the way for the optimal preservation of the patient, anticipating enhanced outcomes in cryopreservation and striving to optimize the efficiency of the process for a more effective and prolonged preservation.",
           section: "Servicios",
           texto_p:
@@ -491,11 +491,36 @@ const ColaboradorPage = (props) => (
 
 function App() {
 
-  const [clickLanguage, setLanguage] = useState(false);
+  
+  const [clickLanguage, setClickLanguage] = useState(null); // default to true
+  
+  const storedLanguage = localStorage.getItem("lenguaje") ? localStorage.getItem("lenguaje"):`english`;
 
+  useEffect(() => {
+    const initialState_vacio = storedLanguage ? false : true;
+    
+    if (initialState_vacio){
+      localStorage.setItem("lenguaje", "english");
+    }
+
+
+    if(localStorage.getItem("lenguaje") == "spanish"){
+      setClickLanguage(true);
+      // console.log("Se ha cambiado a spanish")
+    }
+
+    // console.log(`el valor es: ${storedLanguage}`);
+  }, []);
+
+  // Define toggleLanguage function to toggle language state and reload page
   const toggleLanguage = () => {
-    setLanguage(!clickLanguage);
+    // setClickLanguage(!clickLanguage);
+    // Update localStorage with new language preference
+    localStorage.setItem("lenguaje", (storedLanguage=="english") ? "spanish" : "english");
+
+    window.location.reload();
   };
+
 
 
   const place_mission= [
@@ -683,7 +708,7 @@ Samanta became a valuable collaborator in ecology projects, exploring cactus pop
   return (
     <Router>
       <Routes>
-        <Route path="*" element={<ServiciosPage clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>} />
+        <Route path="*" element={<ServiciosPage clickLanguage={clickLanguage} toggleLanguage={toggleLanguage} />} />
         <Route path="/Criogenia" element={<Criogenia clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>} />
         <Route path="/Rejuvenation" element={<Rejuvenating clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>} />
         <Route path="/Life-extension" element={<Lifeextension clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>} />

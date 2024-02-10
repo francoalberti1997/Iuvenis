@@ -7,6 +7,13 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
 
     const [clicked, setClicked] = useState(false);
 
+    const lenguaje = localStorage.getItem("lenguaje");
+
+    if (!lenguaje){
+        lenguaje == "english";
+    }
+
+
     const toggleMenu = () => {
         setClicked(!clicked);
         document.documentElement.classList.toggle('menu-active', clicked);
@@ -16,7 +23,7 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
     <nav>
         <div className="first-line">
             <div className="container-nav logo">
-                <div className="logo-imagen"><img src={logo} alt="" /></div>
+                <div className="logo-imagen"><Link to="/"><img src={logo} alt="" /></Link></div>
                 {clickLanguage ? <p>Investigación líder</p> : <p>Leading research</p>}
             </div>
             <div className="container-nav info">
@@ -37,8 +44,8 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
                     </div>
 
                     <div className="select_lg" >
-                        { clickLanguage ? <div className="text-languaje" onClick={toggleLanguage}><img src="https://cdn.britannica.com/36/4336-050-056AC114/Flag-Spain.jpg" alt="" /></div> : <div className="text-languaje" onClick={toggleLanguage}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" alt="" /></div> }
-                        <div className="icon-language" onClick={toggleLanguage}><i class="fa fa-solid fa-chevron-down"></i></div>
+                        { (lenguaje!="spanish") ?  <div className="text-languaje" onClick={toggleLanguage}><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg/1200px-Flag_of_the_United_Kingdom_%281-2%29.svg.png" alt="" /></div> : <div className="text-languaje" onClick={toggleLanguage}><img src="https://cdn.britannica.com/36/4336-050-056AC114/Flag-Spain.jpg" alt="" /></div> }
+                        <div className="icon-language"><i class="fa fa-solid fa-chevron-down"></i></div>
                     </div>
                 </div>
             </div>
@@ -49,7 +56,7 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
             <div className="nav-section"><p><a href='/#Servicios'>{clickLanguage ? `Servicios` : `Services`}</a></p></div>
             <div className="nav-section"><p><a href='/#Investigación'>{clickLanguage ? `Investigación` : `Research`}</a></p></div>
             <div className="nav-section"><p><a href="/#Team">{clickLanguage ? `Nosotros` : `About Us`}</a></p></div>
-            <div className="nav-section"><p><a href="/#Mision">{clickLanguage ? `Mision` : `Mission`}    </a></p></div>
+            <div className="nav-section"><p><a href="/#Mision">{clickLanguage ? `Misión` : `Mission`}    </a></p></div>
         </div>
         
         <div id="second-line-burguer" className={clicked ? 'active' : ''}>  
