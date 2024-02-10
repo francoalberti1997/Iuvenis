@@ -93,7 +93,7 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
           title: "Life-extension",
           title_eng:"Life-extension",
           main:"main-home",
-          texto_p_eng:"1mPossible introduces an innovative Anti-aging Department dedicated to slowing down the signs of aging through the implementation of healthy habits, state-of-the-art supplements, and specialized treatments. Additionally, we have an exclusive branch focused on lifestyle and healthy nutrition, oriented towards prevention and overall well-being. We are in a constant research stage, continually seeking new ways to enhance your quality of life.",
+          texto_p_eng:"1mPossible guarantees the preservation of your body in cryonics, ensuring its optimal state without deterioration. Meanwhile, we work tirelessly on the development of advanced technologies to provide a definitive solution to your situation.",
           texto_p:
           '1mPossible garantiza la preservación de su cuerpo en criogenia, asegurando su óptimo estado sin deterioro. Mientras tanto, trabajamos incansablemente en el desarrollo de tecnologías avanzadas para ofrecer una solución definitiva a su situación.',
           imagen:
@@ -555,7 +555,7 @@ function App() {
       En 1mPossible, la seguridad no es solo un lema, sino el pilar fundamental que respalda cada aspecto de nuestro proyecto. Iniciamos nuestras investigaciones en Buenos Aires, Argentina y nos enorgullece anunciar la apertura planificada, para enero de 2026, de nuestro centro operativo de criogenia en Zug, con oficinas centrales en Zúrich, Suiza.
       
       `,
-      texto_eng:"In 1mPossible, security is not just a slogan but the fundamental pillar that underpins every aspect of our project. We initiated our research in Buenos Aires, Argentina, and are proud to announce the planned opening in January 2026 of our cryonics operational center in Zug, with headquarters in Zurich, Switzerland."
+      texto_eng:"At 1mPossible, security is not just a slogan but the fundamental pillar that underpins every aspect of our project. We initiated our research in Buenos Aires, Argentina, and are proud to announce the planned opening in January 2026 of our cryonics operational center in Zug, with headquarters in Zurich, Switzerland."
       ,
       imagen: ubicacion,
     }
