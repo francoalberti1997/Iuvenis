@@ -43,7 +43,7 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
   return (
   <>
     <Navbar toggleLanguage={toggleLanguage} clickLanguage={clickLanguage} />
-    <Wsp />
+    <Wsp clickLanguage={clickLanguage}/>
     <Inicio toggleLanguage={toggleLanguage} clickLanguage={clickLanguage}/>
     <Servicios
       clickLanguage={clickLanguage}
@@ -243,7 +243,7 @@ const ServiciosPage = ({clickLanguage, toggleLanguage, }) => {
 const Criogenia = ({clickLanguage, toggleLanguage}) => (
   <>
     <Navbar clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>
-    <Wsp />
+    <Wsp clickLanguage={clickLanguage}/>
     <Servicios
       
       clickLanguage={clickLanguage}
@@ -384,7 +384,7 @@ La crioprotección, mediante compuestos como el glicerol, reduce o elimina la fo
 const Rejuvenating = ({clickLanguage, toggleLanguage}) => (
   <>
     <Navbar clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>
-    <Wsp />
+    <Wsp clickLanguage={clickLanguage}/>
 
     <Servicios
       clickLanguage={clickLanguage}
@@ -413,7 +413,7 @@ const Rejuvenating = ({clickLanguage, toggleLanguage}) => (
 const Lifeextension = ({clickLanguage, toggleLanguage}) => (
   <>
     <Navbar clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>
-    <Wsp />
+    <Wsp clickLanguage={clickLanguage}/>
 
     <Servicios
       clickLanguage={clickLanguage}
@@ -442,7 +442,7 @@ const Lifeextension = ({clickLanguage, toggleLanguage}) => (
 const Aging = ({clickLanguage, toggleLanguage}) => (
   <>
     <Navbar clickLanguage={clickLanguage} toggleLanguage={toggleLanguage}/>
-    <Wsp />
+    <Wsp clickLanguage={clickLanguage}/>
 
     <Servicios
         clickLanguage={clickLanguage}
@@ -471,7 +471,7 @@ const Aging = ({clickLanguage, toggleLanguage}) => (
 const ColaboradorPage = (props) => (
   <>
     <Navbar clickLanguage={props.language} toggleLanguage={props.toggleLanguage}/>
-    <Wsp />
+    <Wsp clickLanguage={clickLanguage}/>
     <Colaboradores
       nombre={props.nombre}
       titulo={props.titulo}
