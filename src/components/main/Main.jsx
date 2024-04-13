@@ -8,7 +8,7 @@ const Main = () => {
             </div>
             <div className="inicio-text-title">
                 <h2>
-                "Transformando vidas a través de la innovación en salud."
+                Transformando vidas a través de la innovación en salud
                 </h2>
             </div>
             {/* <div className="inicio-text">
@@ -22,11 +22,7 @@ const Main = () => {
                     </h2>
                 </div>
             </div> */}
-            <div className="inicio-text-title mobile-text">
-            <h2>
-                Explorando la Inmortalidad: Ciencia Vanguardista en 1mPossible.     
-            </h2>
-            </div>
+        
     </div>
         
     // </div>

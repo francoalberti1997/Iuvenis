@@ -40,18 +40,18 @@ const Navbar = ({toggleLanguage, clickLanguage}) => {
 
         <div id="second-line">
             <div className="nav-section"><p><a href='/#Home'> Home</a></p></div>
-            <div className="nav-section"><p><a href='/#Investigación'> Investigación</a></p></div>
+            <div className="nav-section"><p><a href='/#Tecnologia'> Tecnología</a></p></div>
             <div className="nav-section"><p><a href="/#Nosotros"> Nosotros</a></p></div>
-            <div className="nav-section"><p><a href="/#Misión">Misión</a></p></div>
+            <div className="nav-section"><p><a href="/#Contacto">Contacto</a></p></div>
         </div>
         
         <div id="second-line-burguer" className={clicked ? 'active' : ''}>  
           
             <div className='nav-section-burguer'>
             <div className="nav-section" onClick={toggleMenu}><p><a href='/#Home'>Home</a></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Investigación'>Investigación</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href='/#Tecnologia'>Tecnología</a></p></div>
             <div className="nav-section" onClick={toggleMenu}><p><a href="/#Nosotros"> Nosotros</a></p></div>
-            <div className="nav-section" onClick={toggleMenu}><p><a href="/#Mision">Mision</a></p></div>
+            <div className="nav-section" onClick={toggleMenu}><p><a href="/#Contacto">Contacto</a></p></div>
             </div>
         </div>
         
