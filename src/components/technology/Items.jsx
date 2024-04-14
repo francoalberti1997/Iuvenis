@@ -9,6 +9,8 @@ const Items = (props) => {
         <img src={props.foto} alt="" />
       </div>
       <h3>{props.nombre}</h3>
+      <p><b>{props.titulo}</b></p>
+      <br />
       <p>{props.descripcion}</p>
     </div>
   );

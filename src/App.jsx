@@ -27,11 +27,11 @@ const App = () => {
       <Navbar/>
       <Main/>
       <Technology 
-        titulo={"Protagonistas"}
+        titulo={"Equipo"}
           lista={[
-            { nombre: "Sebastián Cippitelli", descripcion: "(PARTNER IN SCIENCE AND DEVELOPMENT) Sebastián Cippitelli, Director de 1mPossible, es un visionario dedicado a superar límites en ciencia y biomedicina, con la audaz misión de vencer la mortalidad.", foto: seba },
-            { nombre: " Goya, Rodolfo Gustavo ", descripcion: "(SCIENTIFIC ADVISOR) PhD in Biochemistry, Head of Rejuvenation and Anti-aging group, School of Medicine, National University of La Plata.", foto: rodolfo },
-            { nombre: "Gallardo, María Delfina", descripcion: "(CEO & CSO) BSc. Biotechnologist and Molecular Biologist", foto: delfina }
+            { nombre: "Gallardo, María Delfina", titulo:"CEO & CSO", descripcion: "BSc. Biotechnologist and Molecular Biologist", foto: delfina },
+            { nombre: " Goya, Rodolfo Gustavo ", titulo:"SCIENTIFIC ADVISOR", descripcion: "PhD in Biochemistry, Head of Rejuvenation and Anti-aging group, School of Medicine, National University of La Plata.", foto: rodolfo },
+            { nombre: "Sebastián Cippitelli", titulo:"PARTNER IN SCIENCE AND DEVELOPMENT", descripcion: "Sebastián Cippitelli, Director de 1mPossible, es un visionario dedicado a superar límites en ciencia y biomedicina, con la audaz misión de vencer la mortalidad.", foto: seba },
 
           ]} 
       />

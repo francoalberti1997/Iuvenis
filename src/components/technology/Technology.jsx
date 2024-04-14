@@ -16,6 +16,7 @@ const Technology = (props) => {
             nombre={item.nombre}
             descripcion={item.descripcion}
             foto={item.foto}
+            titulo={item.titulo}
           />
         ))}
       </div>
